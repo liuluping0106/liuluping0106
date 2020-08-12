@@ -1,0 +1,33 @@
+<rss version="2.0">
+<channel>
+
+<item>
+  <title>OneIndex</title>
+  <link>https://www.liulp.club/2020/07/oneindex/</link>
+    <description>&lt;p&gt;个人oneindex网盘搭建过程&lt;/p&gt;
+&lt;h2 id=&#34;技术网站&#34;&gt;技术网站&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/LiuChangFreeman/OneIndex-Serverless&#34;&gt;开源程序oneindex&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/qkqpttgf/OneManager-php&#34;&gt;开源程序oneManager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/74538287&#34;&gt;教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;成果&#34;&gt;成果&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://drive.liulp.club/&#34;&gt;我的oneManager&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://liuluping0106.github.io/oneindex/#/?path=&#34;&gt;我的oneindex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;ssl证书有效期至2021.07.18 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
+  <pubDate>Fri, 10 Jul 2020 10:43:20 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2020/07/oneindex/</guid>
+</item>
+
+</channel>
+</rss>

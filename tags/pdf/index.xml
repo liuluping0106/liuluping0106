@@ -1,0 +1,62 @@
+<rss version="2.0">
+<channel>
+
+<item>
+  <title>pdf.js与iframe</title>
+  <link>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</link>
+    <description>&lt;p&gt;网站解锁iframe方案&lt;/p&gt;
+&lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
+&lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;pdfiframe&amp;quot; 
+    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/{{.Get 0 }}.pdf&amp;quot; 
+    width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/Terence_Tao_Analysis_I.pdf&#34; 
+    width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+
+
+&lt;h2 id=&#34;epubjs内嵌网页&#34;&gt;epub.js内嵌网页&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;epubiframe&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; 
+    src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/{{.Get 0 }}.epub&amp;quot;
+    width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
+    width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;md5密文内嵌&#34;&gt;MD5密文内嵌&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;md5iframe&amp;quot;
+    src=&amp;quot;https://www.liulp.club/md5/decode.html?txt={{.Get 0 }}&amp;quot;
+    width=&amp;quot;100%&amp;quot; height=&amp;quot;300&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;md5iframe&#34;
+    src=&#34;https://www.liulp.club/md5/decode.html?txt=prose_a&#34;
+    width=&#34;100%&#34; height=&#34;300&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;h2 id=&#34;pdfobject方法&#34;&gt;pdfobject方法&lt;/h2&gt;
+&lt;p&gt;此方法无法适配手机浏览器&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;object id= &amp;quot;pdfcontainer&amp;quot; data=&#39;https://pdfobject.com/pdf/sample-3pp.pdf&#39; 
+    type=&#39;application/pdf&#39; 
+    width=&#39;100%&#39; 
+    height=&#39;600px&#39;&amp;gt;
+&amp;lt;/object&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;object id= &#34;pdfcontainer&#34; data=&#39;https://pdfobject.com/pdf/sample-3pp.pdf&#39; 
+type=&#39;application/pdf&#39; 
+type=&#39;application/pdf&#39; 
+width=&#39;100%&#39; 
+height=&#39;600px&#39;&gt;
+&lt;/object&gt;&lt;/p&gt;
+ &lt;script&gt;
+    var ele = document.getElementById(&#39;pdfcontainer&#39;);
+    var he=Math.min(window.screen.availHeight*0.85, ele.offsetWidth*1.6);
+    ele.height = he;
+&lt;/script&gt;&lt;blockquote&gt;
+&lt;/blockquote&gt;</description>
+  <pubDate>Sun, 02 Aug 2020 14:16:19 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</guid>
+</item>
+
+</channel>
+</rss>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.73.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="刘路平">
+<meta name="keywords" content="">
+<meta name="description" content="个人oneindex网盘搭建过程">
+
+
+<meta property="og:description" content="个人oneindex网盘搭建过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Oneindex网盘">
+<meta name="twitter:title" content="Oneindex网盘">
+<meta property="og:url" content="https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+<meta property="twitter:url" content="https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+<meta property="og:site_name" content="刘路平的主页">
+<meta property="og:description" content="个人oneindex网盘搭建过程">
+<meta name="twitter:description" content="个人oneindex网盘搭建过程">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2020-07-10T10:43:20">
+  
+  
+    <meta property="article:modified_time" content="2020-07-10T10:43:20">
+  
+  
+  
+    
+      <meta property="article:section" content="博客">
+    
+  
+  
+    
+      <meta property="article:tag" content="网盘">
+    
+      <meta property="article:tag" content="技术">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://s1.ax1x.com/2020/07/10/Uu4Mrj.th.png">
+  <meta property="twitter:image" content="https://s1.ax1x.com/2020/07/10/Uu4Mrj.th.png">
+
+
+
+
+
+  <meta property="og:image" content="https://s1.ax1x.com/2020/07/09/UmQtOK.th.jpg">
+  <meta property="twitter:image" content="https://s1.ax1x.com/2020/07/09/UmQtOK.th.jpg">
+
+
+    <title>Oneindex网盘</title>
+    
+    <link rel="icon" href="https://liuluping0106.github.io/images/show.ico">
+    
+    
+
+    
+
+    <link rel="canonical" href="https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/video.js/7.9.1/video-js.min.css" crossorigin="anonymous" />
+    
+    
+    
+    <link rel="stylesheet" href="https://www.liulp.club/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+   
+      
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://www.liulp.club/">刘路平的主页</a>
+  </div>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://www.liulp.club/#about">
+          <img class="sidebar-profile-picture" src="https://s1.ax1x.com/2020/07/09/UmQtOK.th.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">刘路平</h4>
+        
+          <h5 class="sidebar-profile-bio">我们必须知道，我们必将知道</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.liulp.club/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.liulp.club/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.liulp.club/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.liulp.club/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/liuluping0106" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="mailto:liuluping1119@126.com?body=Email%20from%20Luping%27s%20website" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-envelope"></i>
+      
+      <span class="sidebar-button-desc">Email</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.liulp.club/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="5"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Oneindex网盘
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-07-10T10:43:20&#43;08:00">
+        
+  
+  
+  
+  
+    2020年七月10日  
+  
+
+      </time>
+    
+    
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://www.liulp.club/categories/%e5%8d%9a%e5%ae%a2">博客</a>
+    
+  
+
+
+  </div>
+
+  <div class="post-meta">
+    <i><span id="jinrishici-sentence">
+      正在加载今日诗词...
+    </span></i>
+  </div>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>个人oneindex网盘搭建过程</p>
+<h2 id="技术网站">技术网站</h2>
+<ul>
+<li><a href="https://github.com/LiuChangFreeman/OneIndex-Serverless">开源程序oneindex</a></li>
+<li><a href="https://github.com/qkqpttgf/OneManager-php">开源程序oneManager</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/74538287">教程</a></li>
+</ul>
+<h2 id="成果">成果</h2>
+<ul>
+<li><a href="https://drive.liulp.club/">我的oneManager</a>
+<ul>
+<li>ssl证书有效期至2021.07.18</li>
+</ul>
+</li>
+<li><a href="https://liuluping0106.github.io/oneindex/#/?path=">我的oneindex</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://www.liulp.club/tags/%E7%BD%91%E7%9B%98/">网盘</a>
+
+  <a class="tag tag--primary tag--small" href="https://www.liulp.club/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/07/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A/" data-tooltip="我的图床">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/" data-tooltip="Hugo短命令">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?url=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+          <i class="fa fa-angle-double-up"></i>
+        
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 刘路平. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/07/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A/" data-tooltip="我的图床">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/" data-tooltip="Hugo短命令">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="http://service.weibo.com/share/share.php?url=https://www.liulp.club/2020/07/oneindex%E7%BD%91%E7%9B%98/">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+        
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+          <i class="fa fa-angle-double-up"></i>
+        
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.liulp.club%2F2020%2F07%2Foneindex%25E7%25BD%2591%25E7%259B%2598%2F">
+          <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https%3A%2F%2Fwww.liulp.club%2F2020%2F07%2Foneindex%25E7%25BD%2591%25E7%259B%2598%2F">
+          <i class="fa fa-qq"></i><span>分享到 QQ空间</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="http://service.weibo.com/share/share.php?url=https%3A%2F%2Fwww.liulp.club%2F2020%2F07%2Foneindex%25E7%25BD%2591%25E7%259B%2598%2F">
+          <i class="fa fa-weibo"></i><span>分享到 新浪微博</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://s1.ax1x.com/2020/07/09/UmQtOK.th.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">刘路平</h4>
+    
+      <div id="about-card-bio">我们必须知道，我们必将知道</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        学生
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        浙江杭州
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    <div id="cover" style="background-image:url('https://s1.ax1x.com/2020/07/13/UYLQpV.png');"></div>
+  
+
+
+    <script type="text/javascript">
+  var content = '<h2>目录</h2>';
+  document.getElementById("table-of-contents").innerHTML = content;
+</script>
+
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.staticfile.org/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.staticfile.org/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+
+<script src="https://www.liulp.club/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+  
+
+
+
+
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-chtml.js">
+  </script>
+
+
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" async charset="utf-8"></script>
+<script src="https://cdn.staticfile.org/video.js/7.9.1/video.min.js" async></script>
+<script type="text/javascript" async>
+  document.getElementById("cover").setAttribute("style","background-image:url('https://s1.ax1x.com/2020/07/15/Uw61un.jpg');");
+</script>
+
+    
+
+  </body>
+</html>
+

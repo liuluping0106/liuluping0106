@@ -1,0 +1,131 @@
+.search {
+    z-index: 30;
+    position: relative;
+    height: 30px;
+    text-align: right;
+    line-height: 30px;
+}
+
+.search .search-icon {
+    float: right;
+    height: 100%;
+    margin: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search .search-input {
+    float: right;
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.search .search-clear {
+    display: none;
+}
+
+.search .search-results {
+    display: block;
+    z-index: 20;
+    position: absolute;
+    top: 46px;
+    right: -5px;
+    width: 150%;
+    max-height: 400px;
+    overflow: auto;
+    text-align: left;
+    border-radius: 5px;
+    background: rgb(234, 234, 239);
+    box-shadow: 0 .3rem .5rem #333;
+}
+/* .search .search-results::-webkit-scrollbar {display:none} */
+
+.search .search-results .result-item {
+    background: white;
+    color: #000;
+    margin: 1.5px;
+    padding: 2px;
+    /* border-radius: 3px; */
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+/*滚动区域背景*/     
+::-webkit-scrollbar-track-piece {
+    background-color: rgb(241,241,241);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}  
+/*竖向滚动条*/      
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgb(193, 193, 193);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+/*横向滚动条*/          
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgb(193, 193, 193);
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+mark{background:rgb(216, 234, 249);}
+
+
+.github-badge {
+	display: inline-block;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	background-color: #abbac3;
+	color: #fff;
+	text-shadow: none;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.github-badge .badge-subject {
+	display: inline-block;
+	padding: 4px 4px 4px 6px;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+	background-color: #4d4d4d;
+}
+
+.github-badge .bg-blue {
+	background-color: #007ec6!important;
+}
+
+.github-badge .badge-value {
+	display: inline-block;
+	padding: 4px 6px 4px 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.github-badge .bg-brightgreen {
+	background-color: #4dc820!important;
+}
+
+.github-badge .bg-orange {
+	background-color: orange!important;
+}
+
+.github-badge .bg-blueviolet {
+	background-color: #8833d7!important;
+}
+
+.github-badge .bg-red {
+	background-color: #e05d44!important;
+}

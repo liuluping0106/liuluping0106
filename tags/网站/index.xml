@@ -1,0 +1,134 @@
+<rss version="2.0">
+<channel>
+
+<item>
+  <title>Hugo短命令</title>
+  <link>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</link>
+    <description>&lt;p&gt;Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大丰富且便捷。&lt;/p&gt;
+&lt;h2 id=&#34;技术站点&#34;&gt;技术站点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bestzuo.cn/posts/blog-bilbli.html&#34;&gt;自适应大小&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/u013842501/article/details/105660616/&#34;&gt;Hugo 短命令&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/94d76eced8c2&#34;&gt;video 加字幕&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://atelier.u-sub.net/srt2vtt/&#34;&gt;srt2vtt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;视频效果&#34;&gt;视频效果&lt;/h2&gt;
+&lt;div style=&#34;position: relative;&#34;&gt;
+    &lt;iframe id=&#34;biiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
+    src=&#34;//player.bilibili.com/player.html?bvid=BV14z411i78Q&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;position: relative; padding: 32% 45%;&amp;quot;&amp;gt;
+    &amp;lt;iframe style=&amp;quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&amp;quot; 
+    src=&amp;quot;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&amp;amp;as_wide=1&amp;amp;high_quality=1&amp;amp;danmaku=1&amp;quot; 
+    scrolling=&amp;quot;no&amp;quot; frameborder=&amp;quot;no&amp;quot; framespacing=&amp;quot;0&amp;quot; allowfullscreen=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;网盘视频&#34;&gt;网盘视频&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;标签支持网盘视频和字幕&lt;/li&gt;
+&lt;li&gt;腾讯云开启CORS&lt;/li&gt;
+&lt;li&gt;加载video.js插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;效果&#34;&gt;效果&lt;/h3&gt;
+&lt;video
+   class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
+   controls
+   preload=&#34;auto&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200810212537.webp&#34;
+   data-setup=&#34;{}&#34;
+ &gt;
+   &lt;source src=https://drive.liulp.club/video/%E5%B0%91%E5%B9%B4%E8%B0%A2%E5%B0%94%E9%A1%BF.Young.Sheldon.S03E21.%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95.HDTVrip.720P-%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86.mp4 type=&#34;video/mp4&#34; /&gt;
+   &lt;track id=&#34;track&#34; src=https://drive.liulp.club/video/%E5%B0%91%E5%B9%B4%E8%B0%A2%E5%B0%94%E9%A1%BF.Young.Sheldon.S03E21.%E4%B8%AD%E8%8B%B1%E5%AD%97%E5%B9%95.HDTVrip.720P-%E4%BA%BA%E4%BA%BA%E5%BD%B1%E8%A7%86.vtt srclang=&#34;Mydrive‘s src&#34;  kind=&#34;subtitles&#34; default&gt;
+    
+&lt;/video&gt;
+&lt;h3 id=&#34;代码-1&#34;&gt;代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;video
+   class=&amp;quot;video-js vjs-big-play-centered vjs-fluid&amp;quot;
+   controls
+   preload=&amp;quot;auto&amp;quot;
+   poster=&amp;quot;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/UwOm5D.jpg&amp;quot;
+   data-setup=&amp;quot;{}&amp;quot; &amp;gt;
+   &amp;lt;source src={{.Get 0 }} type=&amp;quot;video/mp4&amp;quot; /&amp;gt;
+   {{ if .Get 1 }}&amp;lt;track src= {{.Get 1}} srclang=&amp;quot;By Mydrive&amp;quot;  kind=&amp;quot;subtitles&amp;quot; default&amp;gt;
+    {{ else }}{{end}}
+&amp;lt;/video&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
+&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/Terence_Tao_Analysis_I.pdf&#34; 
+    width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+
+
+&lt;h3 id=&#34;代码-2&#34;&gt;代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;pdfiframe&amp;quot; 
+    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/{{.Get 0 }}.pdf&amp;quot; 
+    width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
+&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;问卷效果&#34;&gt;问卷效果&lt;/h2&gt;
+&lt;script type=&#39;text/javascript&#39; src=&#39;https://www.wjx.cn/handler/jqemed.ashx?activity=84948988&amp;width=700&amp;source=iframe&#39;&gt;&lt;/script&gt;
+&lt;h3 id=&#34;代码-3&#34;&gt;代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&#39;text/javascript&#39; 
+    src=&#39;https://www.wjx.cn/handler/jqemed.ashx?activity={{.Get 0 }}&amp;amp;width=700&amp;amp;source=iframe&#39;&amp;gt;
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</description>
+  <pubDate>Sat, 11 Jul 2020 08:44:41 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</guid>
+</item>
+
+<item>
+  <title>网站搭建记录</title>
+  <link>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
+    <description>&lt;p&gt;搭建网站需要的技术记录&lt;/p&gt;
+&lt;h2 id=&#34;资源站点&#34;&gt;资源站点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://sbimg.cn/&#34;&gt;公益图床&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imgchr.com/liuyouyou&#34;&gt;路过图床&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://pngimg.com/&#34;&gt;抠图素材&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.pexels.com/zh-cn/&#34;&gt;Pexels图片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pixabay.com/zh/illustrations/&#34;&gt;Pixabay插画&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://unsplash.com/&#34;&gt;Upslpash图片&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.iconfont.cn/&#34;&gt;阿里矢量图&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/68da4f350d97&#34;&gt;Hugo for windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/liuweixiao520/article/details/78971221&#34;&gt;git推送设置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cungudafa.top/post/3af9.html&#34;&gt;今日诗词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/yelllowcong/article/details/77663442&#34;&gt;git关闭右键菜单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.feiniaomy.com/post/456.html&#34;&gt;添加网站运行天数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/zhixingwu/article/details/104393647&#34;&gt;FA5使用方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/qq_36759224/article/details/98058240&#34;&gt;jsDelivr图床&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/137795279&#34;&gt;jsDelivr使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_33813128/article/details/88588655&#34;&gt;百度SEO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://knightyun.github.io/2019/03/04/articles-search&#34;&gt;站内搜索&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;官方网站&#34;&gt;官方网站&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jinrishici.com/&#34;&gt;今日诗词&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fa5.dashgame.com/#/&#34;&gt;Fontawesome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://busuanzi.ibruce.info/&#34;&gt;不蒜子&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tinypng.com/&#34;&gt;熊猫压缩&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.staticfile.org/&#34;&gt;staticfile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jsdelivr.com/&#34;&gt;jsdelivr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;常用特殊符号&#34;&gt;常用特殊符号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;常用排版 : ▌▍◆★☆☁➤➜❤➊➋➌&lt;/li&gt;
+&lt;li&gt;TodoList : ✅☑✓✔√☓☒✘ㄨ✕✖✗❌❎&lt;/li&gt;
+&lt;li&gt;emoji : 🌹🍀🌙🍂🍃🌷💎🔥⭐🍄🏆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;计划完善&#34;&gt;计划完善&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;看板娘&lt;/li&gt;
+&lt;li&gt;动态背景&lt;/li&gt;
+&lt;li&gt;伸缩式目录&lt;/li&gt;
+&lt;/ul&gt;</description>
+  <pubDate>Thu, 09 Jul 2020 12:54:26 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
+</item>
+
+</channel>
+</rss>
