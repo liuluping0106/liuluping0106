@@ -4,7 +4,19 @@
 <item>
   <title>宝塔配置相关</title>
   <link>https://www.liulp.club/2020/08/%E5%AE%9D%E5%A1%94%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
-    <description>&lt;p&gt;阿里云服务器使用宝塔面板&lt;/p&gt;</description>
+    <description>&lt;p&gt;阿里云服务器决定使用宝塔面板。&lt;/p&gt;
+&lt;h2 id=&#34;我的网站&#34;&gt;我的网站&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://baota.liulp.club&#34;&gt;宝塔面板&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://one.liulp.club&#34;&gt;PyOne&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://analytic.liulp.club&#34;&gt;Matomo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.aliyun.com/ask/233242?spm=a2c6h.13524658&#34;&gt;宝塔初始化&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/gelandesprung/p/12019157.html&#34;&gt;Docker文件操作&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.daniao.org/7523.html&#34;&gt;安装Matomo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/08/%E5%AE%9D%E5%A1%94%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</guid>
