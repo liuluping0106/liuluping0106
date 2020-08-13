@@ -20,6 +20,7 @@
 &lt;ul&gt;
 &lt;li&gt;对于依赖版本要求非常准确，对最新版适配欠缺&lt;/li&gt;
 &lt;li&gt;需要进如Docker内部开启https&lt;/li&gt;
+&lt;li&gt;不支持默认中文目录&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/799/&#34;&gt;安装PyOne&lt;/a&gt;
