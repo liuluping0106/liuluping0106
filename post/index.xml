@@ -4,7 +4,8 @@
 <item>
   <title>宝塔配置相关</title>
   <link>https://www.liulp.club/2020/08/%E5%AE%9D%E5%A1%94%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
-    <description>&lt;p&gt;阿里云服务器决定使用宝塔面板。&lt;/p&gt;
+    <description>&lt;p&gt;阿里云服务器启用宝塔面板。&lt;/p&gt;
+&lt;p&gt;本文记录我在阿里云和vultr的两台服务器的各种操作。&lt;/p&gt;
 &lt;h2 id=&#34;我的网站&#34;&gt;我的网站&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://baota.liulp.club&#34;&gt;宝塔面板&lt;/a&gt;&lt;/li&gt;
@@ -26,7 +27,8 @@
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/799/&#34;&gt;安装PyOne&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;Docker版是阉割版&lt;/li&gt;
-&lt;li&gt;一键安装脚本非常好用，建议可以弄单独的服务器运行&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/806/&#34;&gt;一键安装脚本&lt;/a&gt;非常好用，建议可以弄单独的服务器运行&lt;/li&gt;
+&lt;li&gt;Caddy运行失败，使用&lt;a href=&#34;https://www.moerats.com/archives/409/&#34;&gt;Caddy安装脚本&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/750/&#34;&gt;安装Aria2&lt;/a&gt;
