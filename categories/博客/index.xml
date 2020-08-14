@@ -50,7 +50,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.azimiao.com/5503.html&#34;&gt;安装wekan看板&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;即使挂了穿透，也要开放端口，可能是内部设定问题&lt;/li&gt;
+&lt;li&gt;穿透要挂到内网里，使用公网ip就是普通转代了……&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
