@@ -12,6 +12,7 @@
 &lt;li&gt;&lt;a href=&#34;https://vultr.liulp.club&#34;&gt;PyOne&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://analytic.liulp.club&#34;&gt;Matomo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://aria.liulp.club&#34;&gt;Aria2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://polr.liulp.club/&#34;&gt;Shlink&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
 &lt;ul&gt;
@@ -36,8 +37,10 @@
 &lt;li&gt;配合图形界面和上传工具使用更佳&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/956/&#34;&gt;安装lstu短链&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www.moerats.com/archives/956/&#34;&gt;安装lstu短链&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shlink.io/documentation/&#34;&gt;安装shlink短链&lt;/a&gt;[^api]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[^api] d0632ef5-9fe0-4936-83ee-9241c0560947&lt;/p&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/08/%E5%AE%9D%E5%A1%94%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</guid>
