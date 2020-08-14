@@ -38,7 +38,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www.moerats.com/archives/956/&#34;&gt;安装lstu短链&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://shlink.io/documentation/&#34;&gt;安装shlink短链&lt;/a&gt;[^api]&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shlink.io/documentation/&#34;&gt;安装shlink短链&lt;/a&gt;[^api]
+&lt;ul&gt;
+&lt;li&gt;直接使用Docker安装，官方配套web控制台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;[^api] d0632ef5-9fe0-4936-83ee-9241c0560947&lt;/p&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
