@@ -23,11 +23,16 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://developer.aliyun.com/ask/233242?spm=a2c6h.13524658&#34;&gt;宝塔初始化&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.cnblogs.com/gelandesprung/p/12019157.html&#34;&gt;Docker文件操作&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.daniao.org/7523.html&#34;&gt;安装Matomo&lt;/a&gt;
+&lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://www.daniao.org/7523.html&#34;&gt;安装Matomo&lt;/a&gt;&lt;/del&gt;
 &lt;ul&gt;
 &lt;li&gt;对于依赖版本要求非常准确，对最新版适配欠缺&lt;/li&gt;
 &lt;li&gt;需要进如Docker内部开启https&lt;/li&gt;
 &lt;li&gt;不支持默认中文目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://matomo.org/docs/installation/#start-the-installation&#34;&gt;安装官方matomo&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;官方的真的简洁又好用！！！还能正常连接数据库！！！&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/799/&#34;&gt;安装PyOne&lt;/a&gt;
