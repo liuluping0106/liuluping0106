@@ -4,7 +4,7 @@
 <item>
   <title>服务器配置相关</title>
   <link>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
-    <description>&lt;p&gt;阿里云服务器启用宝塔面板。&lt;/p&gt;
+    <description>&lt;p&gt;阿里云服务器启用宝塔面板，配合静态和php搭建各种网站。&lt;/p&gt;
 &lt;p&gt;本文记录我在阿里云和vultr的两台服务器的各种操作，这也是我独门的减压的方法吧。都挺好，就是越弄时间越少，压力越大啊。一直摸鱼可不会一直爽，咳咳。&lt;/p&gt;
 &lt;h2 id=&#34;我的网站&#34;&gt;我的网站&lt;/h2&gt;
 &lt;ul&gt;
