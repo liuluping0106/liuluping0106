@@ -2,35 +2,6 @@
 <channel>
 
 <item>
-  <title>Test</title>
-  <link>https://www.liulp.club/2020/08/test/</link>
-    <description>&lt;section id=&#34;videoPlayer&#34;&gt;
-&lt;video id=&#34;example-video&#34; class=&#34;video-js vjs-big-play-centered vjs-fluid&#34; poster=&#34;&#34;&gt;
-    &lt;source src=&#39;https://drive.liulp.club/Download/video/cs.m3u8&#39; type=&#34;application/x-mpegURL&#34; id=&#34;target&#34;&gt;
-&lt;/video&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-            var player = videojs(&#39;example-video&#39;, { &#34;poster&#34;: &#34;&#34;, &#34;controls&#34;: &#34;true&#34; }, function() {
-                this.on(&#39;play&#39;, function() {
-                    console.log(&#39;正在播放&#39;);
-                });
-                //暂停--播放完毕后也会暂停
-                this.on(&#39;pause&#39;, function() {
-                    console.log(&#34;暂停中&#34;)
-                });
-                // 结束
-                this.on(&#39;ended&#39;, function() {
-                    console.log(&#39;结束&#39;);
-                })
- 
-            });
-        &lt;/script&gt;
-&lt;/section&gt;</description>
-  <pubDate>Tue, 18 Aug 2020 18:46:24 +0800</pubDate>
-  
-  <guid>https://www.liulp.club/2020/08/test/</guid>
-</item>
-
-<item>
   <title>服务器配置相关</title>
   <link>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
     <description>&lt;p&gt;阿里云服务器启用宝塔面板，配合静态和php搭建各种网站。&lt;/p&gt;
@@ -1045,6 +1016,17 @@ height=&#39;600px&#39;&gt;
   <pubDate>Wed, 08 Jul 2020 19:38:59 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/07/4%E5%A4%A9%E8%AE%A1%E5%88%92/</guid>
+</item>
+
+<item>
+  <title>Test</title>
+  <link>https://www.liulp.club/1/01/test/</link>
+    <description>&lt;iframe id=&#34;m3u8iframe&#34;  src=&#34;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/video/cs.m3u8&#34;
+    width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;</description>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+  <guid>https://www.liulp.club/1/01/test/</guid>
 </item>
 
 </channel>

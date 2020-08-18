@@ -303,5 +303,16 @@ height=&#39;600px&#39;&gt;
   <guid>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
 </item>
 
+<item>
+  <title>Test</title>
+  <link>https://www.liulp.club/1/01/test/</link>
+    <description>&lt;iframe id=&#34;m3u8iframe&#34;  src=&#34;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/video/cs.m3u8&#34;
+    width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;</description>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+  
+  <guid>https://www.liulp.club/1/01/test/</guid>
+</item>
+
 </channel>
 </rss>
