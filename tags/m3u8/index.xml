@@ -13,6 +13,7 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/boyit0/article/details/88579330&#34;&gt;video.js实现m3u8播放&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现过程&#34;&gt;实现过程&lt;/h2&gt;
+&lt;p&gt;远端执行代码：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;#!/bin/bash
 
 GID=&amp;quot;$1&amp;quot;;
