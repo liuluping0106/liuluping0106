@@ -7,7 +7,10 @@
     <description>&lt;p&gt;成功使用远程下载自动切片m3u8，且实现在线播放。&lt;/p&gt;
 &lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/273bdb4c240b&#34;&gt;mp4切片m3u8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/482/&#34;&gt;aria2远程下载&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/1006/&#34;&gt;远程上传到onedrive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/boyit0/article/details/88579330&#34;&gt;video.js实现m3u8播放&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现过程&#34;&gt;实现过程&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;#!/bin/bash
