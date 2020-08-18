@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.73.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="刘路平">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<meta http-equiv="Expires" content="600">
+<meta http-equiv="expires" content="600">
 
 <meta property="og:description" content="">
 <meta property="og:type" content="article">
@@ -23,10 +23,10 @@
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-08-07T00:57:57">
+    <meta property="article:published_time" content="2020-08-18T18:46:24">
   
   
-    <meta property="article:modified_time" content="2020-08-07T00:57:57">
+    <meta property="article:modified_time" content="2020-08-18T18:46:24">
   
   
   
@@ -77,16 +77,20 @@
     
     
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"  crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/viewerjs@1.6.1/dist/viewer.min.css"  crossorigin="anonymous" />
+    
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/viewerjs@1.6.1/dist/viewer.min.css" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/video.js@7.9.2/dist/video-js.min.css" crossorigin="anonymous" />
+    
+    
+    
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/css/style-t31.min.css" />
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/css/search_v.min.css"  />
 
-    
-    
-    
-    
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/liuluping0106/liuluping0106.github.io/css/style-t18.min.css" />
-    
+    <link rel="preconnect" href="https://busuanzi.ibruce.info" crossorigin="anonymous">
+    <link rel="preconnect" href="https://ia.51.la" crossorigin="anonymous">
     
     
 
@@ -94,8 +98,7 @@
       
     
     
-   
-      
+
   </head>
 
   <body>
@@ -105,17 +108,13 @@
   <div class="header-title">
     <a class="header-title-link" href="https://www.liulp.club/">刘路平的主页</a>
   </div>
-  
-    
-      <a class="header-right-icon open-algolia-search"
-         href="./#algolia-search-modal">
-    
-    
-      <i class="fa fa-lg fa-search"></i>
-    
-    
-    </a>
-  
+  <div class="search header-right-icon">
+    <i class="material-icons search-icon search-start"><i class="fa fa-chevron-left"></i></i>
+    <input type="text" class="search-input" placeholder="搜索" />
+    <i class="material-icons search-icon search-clear"><i class="fa fa-chevron-right"></i></i>
+  <div class="search-results" id="searchout" ></div>
+  </div>
+
 </header>
 
       <nav id="sidebar" data-behavior="5">
@@ -203,7 +202,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://www.liulp.club/index.xml">
+      <a class="sidebar-button-link " href="https://www.liulp.club/post/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -232,13 +231,13 @@
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-08-07T00:57:57&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-08-18T18:46:24&#43;08:00">
         
   
   
   
   
-    2020年八月7日  
+    2020年八月18日  
   
 
       </time>
@@ -270,41 +269,31 @@
                hasCoverMetaIn
                ">
         <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-      
-        
-
-        <div id="upper_ele">
           
           
           <div class="post-content markdown" itemprop="articleBody">
-            <div class="main-content-wrap">
-              <div id="search-bar" class="search-bar">
-    <input id="search" type="search" placeholder="Search..."><br>
-  </div>
-  <div id="results">Result</div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.1/dist/fuse.min.js" crossorigin="anonymous"></script>
+            <div class="main-content-wrap" id="upper_ele">
+              <section id="videoPlayer">
+<video id="example-video" class="video-js vjs-big-play-centered vjs-fluid" poster="">
+    <source src='https://drive.liulp.club/Download/video/cs.m3u8' type="application/x-mpegURL" id="target">
+</video>
 <script type="text/javascript">
-// Extract the `q` query parameter
-var queryStringRegex = /[\?&]q=([^&]+)/g;
-var matches = queryStringRegex.exec(window.location.search);
-if(matches && matches[1]) {
-  var value = decodeURIComponent(matches[1].replace(/\+/g, '%20'));
-  // Load the posts to search
-  $.getJSON('https://cdn.jsdelivr.net/gh/liuluping0106/liuluping0106.github.io/index.json').then(function(posts) {
-    // Remember to include Fuse.js before this script.
-    var fuse = new Fuse(posts, {
-      keys: ['title', 'tags'] // What we're searching
-    });
-    // Run the search
-    var results = fuse.search(value);
-    // Generate markup for the posts, implement SearchResults however you want.
-    var $results = SearchResults(results);
-    // Add the element to the empty <div> from before.
-    $('#searchResults').append($results);
-  });
-}
-</script>
+            var player = videojs('example-video', { "poster": "", "controls": "true" }, function() {
+                this.on('play', function() {
+                    console.log('正在播放');
+                });
+                //暂停--播放完毕后也会暂停
+                this.on('pause', function() {
+                    console.log("暂停中")
+                });
+                // 结束
+                this.on('ended', function() {
+                    console.log('结束');
+                })
+ 
+            });
+        </script>
+</section>
               
             </div>
           </div>
@@ -339,7 +328,7 @@ if(matches && matches[1]) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/" data-tooltip="pdf.js与iframe">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/" data-tooltip="服务器配置相关">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -391,21 +380,44 @@ if(matches && matches[1]) {
               
             
           </div>
-        </div>
         </article>
         <footer id="footer" class="main-content-wrap">
-  <span id=la_20899205 style="visibility: hidden"></span><br>
-  编译 <a href="https://gohugo.io">Hugo</a> &nbsp; 主题 <a href="https://github.com/kakawait/hugo-tranquilpeak-theme">tranquilpeak</a> &nbsp; 
+  <span id=la_20899205 style="display:none;"></span><br>
   
-总访问 <span id='laout'></span> 次 &nbsp; 
   
-  已运行 <span id="spantime"></span> 啦<br>
+
+  
+  
   <span class="copyrights">
-    &copy; 2020 刘路平. All Rights Reserved
-  </span>
+    &copy; 2020 刘路平 
+  </span> <i class="fa fa-coffee"></i> <a class="icp" href="http://beian.miit.gov.cn" target="_blank" style="color: #9eabb3;text-decoration:none">浙ICP备20029940号</a> • All Rights Reserved<br>
+  <div class="github-badge">
+    <a style="color: #fff" rel="license noopener" href="https://gohugo.io" target="_blank"  title="由 Hugo 驱动" >
+    <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hugo</span></a>
+    </div>
+    <div class="github-badge">
+    <a style="color: #fff" rel="license noopener" href="https://github.com/kakawait/hugo-tranquilpeak-theme" target="_blank"  title="主题为 tranquilpeak" >
+    <span class="badge-subject">Theme</span><span class="badge-value bg-red">tranquilpeak</span></a>
+    </div>
+    <div class="github-badge">
+    <a style="color: #fff" rel="license noopener" href="https://www.jsdelivr.com/" target="_blank"  title="使用 jsdelivr's CDN">
+    <span class="badge-subject">Storage</span><span class="badge-value bg-brightgreen">&nbspjsDelivr</span></a>
+    </div>
+    
+    
+    <div class="github-badge">
+    <a style="color: #fff" rel="license noopener" href="https://tongji.baidu.com/web/welcome/ico?s=6f3e9da4ef7b870d4268ab2e39f10108" target="_blank"  title="使用 不蒜子＆51La＆Baidu">
+    <span class="badge-subject">PV</span><span class="badge-value bg-orange" id='busuanzi_value_site_pv'>&nbsp</span></a>
+    </div>
+    <div class="github-badge">
+    <a style="color: #fff" rel="license noopener" href="https://github.com/liuluping0106/liuluping0106" target="_blank"  title="在 GitHub＆Aliyun 上运行" >
+    <span class="badge-subject">运行</span><span class="badge-value bg-blueviolet" id="spantime">&nbsp</span></a>
+    </div>
+    </div>
 </footer>
 
       </div>
+      <div id="mybottom">
       <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
         <div class="post-actions-wrap">
   
@@ -422,7 +434,7 @@ if(matches && matches[1]) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/" data-tooltip="pdf.js与iframe">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/" data-tooltip="服务器配置相关">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -469,7 +481,8 @@ if(matches && matches[1]) {
     </ul>
   
 </div>
-
+ 
+      </div>
       </div>
       <div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
@@ -529,26 +542,21 @@ if(matches && matches[1]) {
 
     
   
-    <div id="cover" style="background-image:url('https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200801232929.jpg');"></div>
+    <div id="cover" style="background-image:url('https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200808165920.webp');"></div>
   
 
 
-    <script type="text/javascript">
-  var ele = document.getElementById("table-of-contents")
-  if(ele){
-    ele.innerHTML = '<h2>目录</h2>';
-  }
-</script>
-
+    
 
 <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
 <script data-pjax-viewer src="//cdn.jsdelivr.net/npm/viewerjs@1.6.1/dist/viewer.min.js" crossorigin="anonymous"></script>
 
-<script src="//cdn.jsdelivr.net/gh/liuluping0106/liuluping0106.github.io/js/highlight.min.js" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/js/highlight.min.js" crossorigin="anonymous" ></script>
 
 
 
-<script src="//cdn.jsdelivr.net/gh/liuluping0106/liuluping0106.github.io/js/script-p2.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/js/script-p3.min.js" async="async"></script>
+
 
 
 <script lang="javascript">
@@ -578,8 +586,6 @@ $(document).ready(function() {
 });
 </script>
 
-<script type="text/javascript" src="//js.users.51.la/20899205.js" async="async"></script>
-<script type="text/javascript" src="//quote.51.la/q?id=20899205&mb=1" async="async"></script>
 
   
     
@@ -590,12 +596,30 @@ $(document).ready(function() {
 
 
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async="async"
+    src="//cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js">
+</script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/jquery-lazyload@1.9.7/jquery.lazyload.min.js"></script>
 
-<script src="//cdn.jsdelivr.net/combine/gh/liuluping0106/liuluping0106.github.io/js/jinrishici.min.js,gh/liuluping0106/liuluping0106.github.io/js/mainjs_w.min.js" async="async" charset="utf-8"></script>
 
+<script src="//cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/js/all_13.min.js" async="async" charset="utf-8"></script>
 
+<script src="//cdn.jsdelivr.net/npm/video.js@7.9.2/dist/video.min.js" async="async"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-contrib-hls@5.15.0/dist/videojs-contrib-hls.js" async="async"></script>
+
+<script src="https://hm.baidu.com/hm.js?6f3e9da4ef7b870d4268ab2e39f10108" async="async"></script>
 
 
 
