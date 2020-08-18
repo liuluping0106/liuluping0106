@@ -14,7 +14,7 @@
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/boyit0/article/details/88579330&#34;&gt;video.js实现m3u8播放&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现过程&#34;&gt;实现过程&lt;/h2&gt;
-&lt;p&gt;远端执行代码：&lt;/p&gt;
+&lt;h3 id=&#34;服务器端代码&#34;&gt;服务器端代码：&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;#!/bin/bash
 
 GID=&amp;quot;$1&amp;quot;;
@@ -72,8 +72,12 @@ function LoadFile(){
   IFS=$IFS_BAK
 }
 LoadFile;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;前端代码&#34;&gt;前端代码&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;m3u8iframe&amp;quot;  src=&amp;quot;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/{{.Get 0 }}/cs.m3u8&amp;quot;
+    width=&amp;quot;100%&amp;quot; height=&amp;quot;600&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; frameborder=&amp;quot;0&amp;quot; scrolling=&#39;no&#39;&amp;gt;
+&amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;效果&#34;&gt;效果&lt;/h2&gt;
-&lt;iframe id=&#34;m3u8iframe&#34;  src=&#34;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/%e8%b4%9f%e5%bf%83%e4%ba%baBD%e4%b8%ad%e5%ad%97/cs.m3u8&#34;
+&lt;iframe id=&#34;m3u8iframe&#34;  src=&#34;https://www.liulp.club/m3u8/index.html?url=//cdn.jsdelivr.net/gh/liuluping0106/video/cs.m3u8&#34;
     width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34; scrolling=&#39;no&#39;&gt;
 &lt;/iframe&gt;</description>
   <pubDate>Tue, 18 Aug 2020 19:17:28 +0800</pubDate>
