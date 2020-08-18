@@ -80,7 +80,16 @@ LoadFile;
 &lt;iframe id=&#34;m3u8iframe&#34;  src=&#34;https://www.liulp.club/m3u8/index.html?url=//cdn.jsdelivr.net/gh/liuluping0106/video@1/cs.m3u8&#34;
     width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34; scrolling=&#39;no&#39;&gt;
 &lt;/iframe&gt;
-&lt;p&gt;test&lt;/p&gt;</description>
+&lt;video
+   class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
+   controls
+   preload=&#34;auto&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200810212537.webp&#34;
+   data-setup=&#34;{}&#34;
+ &gt;
+   &lt;source src=https:////cdn.jsdelivr.net/gh/liuluping0106/video@1/cs.m3u8 type=&#34;video/mp4&#34; /&gt;
+   
+&lt;/video&gt;</description>
   <pubDate>Tue, 18 Aug 2020 19:17:28 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/08/%E8%BF%9C%E7%A8%8B%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E6%88%90m3u8%E5%BD%A2%E5%BC%8F/</guid>
