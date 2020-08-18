@@ -8,6 +8,7 @@
 &lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jianshu.com/p/273bdb4c240b&#34;&gt;mp4切片m3u8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ffmpeg.org/&#34;&gt;ffmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/482/&#34;&gt;aria2远程下载&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.moerats.com/archives/1006/&#34;&gt;远程上传到onedrive&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/boyit0/article/details/88579330&#34;&gt;video.js实现m3u8播放&lt;/a&gt;&lt;/li&gt;
@@ -28,6 +29,8 @@ LocalDIR=&amp;quot;/usr/local/caddy/www/aria2/Download&amp;quot;;  #Aria2下载�
 Uploader=&amp;quot;/usr/local/bin/OneDriveUploader&amp;quot;;  #上传的程序完整路径，默认为本文安装的目录
 Config=&amp;quot;/root/auth.json&amp;quot;;  #初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径
 
+
+# 调用ffmpeg
 cd /usr/local/caddy/www/aria2/Download
 for files in `ls`
 do
