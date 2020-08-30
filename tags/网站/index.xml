@@ -13,7 +13,7 @@
 &lt;li&gt;&lt;a href=&#34;http://aria.liulp.club&#34;&gt;Aria2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://short.liulp.club/&#34;&gt;Shlink&lt;/a&gt;
 &lt;ul&gt;
-&lt;li&gt;API:78e166d6-7fcb-4ac5-b1a2-57e992a1bc28 &lt;i class=&#34;fa fa-clone&#34; id=&#39;copyto&#39; onclick=&#34;copyapi()&#34; title=&#34;复制API到剪贴板&#34;&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;li&gt;API:78e166d6-7fcb-4ac5-b1a2-57e992a1bc28 &lt;i class=&#34;fa fa-copy&#34; id=&#39;copyto&#39; onclick=&#34;copyapi()&#34; title=&#34;复制API到剪贴板&#34;&gt;&lt;/i&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;del&gt;&lt;a href=&#34;https://wekan.liulp.club/&#34;&gt;wekan&lt;/a&gt;&lt;/del&gt;&lt;/li&gt;
