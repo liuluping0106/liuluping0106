@@ -199,7 +199,7 @@ LoadFile;
     src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.pdf&amp;quot; 
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/Terence_Tao_Analysis_I.pdf&#34; 
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/Terence_Tao_Analysis_I.pdf&#34; 
     width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 
@@ -299,7 +299,7 @@ height=&#39;600px&#39;&gt;
     {{ else }}{{end}}
 &amp;lt;/video&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
-&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/Terence_Tao_Analysis_I.pdf&#34; 
+&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/Terence_Tao_Analysis_I.pdf&#34; 
     width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 
