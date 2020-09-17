@@ -260,7 +260,7 @@ function performPage(strPass){
  if(strPass){
   document.cookie="password="+escape(strPass);
   document.write(XOR(unescape(strHTML),STR.md5(strPass)));
-  document.body.style.backgroundImage="url(https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200805081755.jpg)";
+  document.body.style.backgroundImage="url(https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200805081755.jpg)";
   document.body.style.backgroundAttachment = "fixed";
   return(false);
  }
@@ -278,6 +278,6 @@ function performPage(strPass){
  strAskPass+="<b>Password:</b><input style=\"border-width:1px;\" type=password id=ps01 onkeydown=\"if(event.keyCode==13){performPage(this.value);}\">";
  strAskPass+="<input style=\"border-width:1px;\" type=button onclick=\"performPage(ps01.value);\" value=Enter></td><td>&nbsp;</td></tr></table>";
  document.write(strAskPass);
- document.body.style.backgroundImage="url(https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/20200805081755.jpg)";
+ document.body.style.backgroundImage="url(https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200805081755.jpg)";
 }
 performPage();
