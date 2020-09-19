@@ -46,9 +46,13 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;0918&#34;&gt;09.18&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;高中联赛批卷&lt;/li&gt;
+&lt;li&gt;高中联赛批卷 $\checkmark$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;0919&#34;&gt;09.19&lt;/h3&gt;</description>
+&lt;h3 id=&#34;0919&#34;&gt;09.19&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高中联赛批卷 $\checkmark$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;0920&#34;&gt;09.20&lt;/h3&gt;</description>
   <pubDate>Sat, 12 Sep 2020 21:49:47 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/09/%E7%94%B3%E8%AF%B7%E5%AD%A3/</guid>
@@ -354,7 +358,7 @@ LoadFile;
     src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.epub&amp;quot;
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
     width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 

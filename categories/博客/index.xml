@@ -209,7 +209,7 @@ LoadFile;
     src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.epub&amp;quot;
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
     width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 
