@@ -93,7 +93,7 @@ function viewchange(){
     alltin = allt.innerHTML;
     if(alltin){
       st = alltin.split("&nbsp;");
-      allout = st[1];
+      allout = st[1].replace(',','');
       // ele.innerHTML= '';
       var tele = document.getElementById('laout');
       if(tele){
