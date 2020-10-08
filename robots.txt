@@ -1,4 +1,7 @@
 # robots.txt generated at http://tool.chinaz.com/robots/ 
+User-agent: *
 Disallow: /tags
 Disallow: /post
 Disallow: /categories
+
+Sitemap: https://www.liulp.club/sitemap.xml
