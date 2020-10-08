@@ -1,4 +1,4 @@
-# robots.txt generated at http://tool.chinaz.com/robots/ 
+# robots.txt used by https://www.liulp.club
 User-agent: *
 Disallow: /tags
 Disallow: /post
