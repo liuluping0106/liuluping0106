@@ -3,7 +3,7 @@
 
 <item>
   <title>远程下载视频成m3u8形式</title>
-  <link>https://www.liulp.club/2020/08/%E8%BF%9C%E7%A8%8B%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E6%88%90m3u8%E5%BD%A2%E5%BC%8F/</link>
+  <link>https://www.liulp.club/2020/08/m3u8/</link>
     <description>&lt;p&gt;成功使用远程下载自动切片m3u8，且实现在线播放。&lt;/p&gt;
 &lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
 &lt;ul&gt;
@@ -82,12 +82,12 @@ LoadFile;
 &lt;/iframe&gt;</description>
   <pubDate>Tue, 18 Aug 2020 19:17:28 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/%E8%BF%9C%E7%A8%8B%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E6%88%90m3u8%E5%BD%A2%E5%BC%8F/</guid>
+  <guid>https://www.liulp.club/2020/08/m3u8/</guid>
 </item>
 
 <item>
   <title>服务器配置相关</title>
-  <link>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
+  <link>https://www.liulp.club/2020/08/baota/</link>
     <description>&lt;p&gt;阿里云服务器启用宝塔面板，配合静态和php搭建各种网站。&lt;/p&gt;
 &lt;p&gt;本文记录我在阿里云和vultr的两台服务器的各种操作，这也是我独门的减压的方法吧。都挺好，就是越弄时间越少，压力越大啊。一直摸鱼可不会一直爽，咳咳。&lt;/p&gt;
 &lt;h2 id=&#34;我的网站&#34;&gt;我的网站&lt;/h2&gt;
@@ -186,12 +186,12 @@ LoadFile;
 &lt;/blockquote&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</guid>
+  <guid>https://www.liulp.club/2020/08/baota/</guid>
 </item>
 
 <item>
   <title>pdf.js与iframe</title>
-  <link>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</link>
+  <link>https://www.liulp.club/2020/08/pdf_iframe/</link>
     <description>&lt;p&gt;网站解锁iframe方案&lt;/p&gt;
 &lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
 &lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
@@ -243,12 +243,12 @@ height=&#39;600px&#39;&gt;
 &lt;/blockquote&gt;</description>
   <pubDate>Sun, 02 Aug 2020 14:16:19 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</guid>
+  <guid>https://www.liulp.club/2020/08/pdf_iframe/</guid>
 </item>
 
 <item>
   <title>Hugo短命令</title>
-  <link>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</link>
+  <link>https://www.liulp.club/2020/07/hugo/</link>
     <description>&lt;p&gt;Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大丰富且便捷。&lt;/p&gt;
 &lt;h2 id=&#34;技术站点&#34;&gt;技术站点&lt;/h2&gt;
 &lt;ul&gt;
@@ -318,7 +318,7 @@ height=&#39;600px&#39;&gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
   <pubDate>Sat, 11 Jul 2020 08:44:41 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</guid>
+  <guid>https://www.liulp.club/2020/07/hugo/</guid>
 </item>
 
 <item>
@@ -351,7 +351,7 @@ height=&#39;600px&#39;&gt;
 
 <item>
   <title>网站搭建记录</title>
-  <link>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
+  <link>https://www.liulp.club/2020/07/build_web/</link>
     <description>&lt;p&gt;搭建网站需要的技术记录&lt;/p&gt;
 &lt;h2 id=&#34;资源站点&#34;&gt;资源站点&lt;/h2&gt;
 &lt;ul&gt;
@@ -400,7 +400,7 @@ height=&#39;600px&#39;&gt;
 &lt;/ul&gt;</description>
   <pubDate>Thu, 09 Jul 2020 12:54:26 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
+  <guid>https://www.liulp.club/2020/07/build_web/</guid>
 </item>
 
 </channel>

@@ -3,7 +3,7 @@
 
 <item>
   <title>再出发</title>
-  <link>https://www.liulp.club/2020/09/%E5%86%8D%E5%87%BA%E5%8F%91/</link>
+  <link>https://www.liulp.club/2020/09/once_more/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;要学好人工智能，首先要养成良好的学习习惯&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -122,12 +122,12 @@
 &lt;h3 id=&#34;1011&#34;&gt;10.11&lt;/h3&gt;</description>
   <pubDate>Sun, 27 Sep 2020 21:35:16 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/09/%E5%86%8D%E5%87%BA%E5%8F%91/</guid>
+  <guid>https://www.liulp.club/2020/09/once_more/</guid>
 </item>
 
 <item>
   <title>申请季</title>
-  <link>https://www.liulp.club/2020/09/%E7%94%B3%E8%AF%B7%E5%AD%A3/</link>
+  <link>https://www.liulp.club/2020/09/application/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;开学纪实&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -267,12 +267,12 @@
 &lt;/p&gt;</description>
   <pubDate>Sat, 12 Sep 2020 21:49:47 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/09/%E7%94%B3%E8%AF%B7%E5%AD%A3/</guid>
+  <guid>https://www.liulp.club/2020/09/application/</guid>
 </item>
 
 <item>
   <title>远程下载视频成m3u8形式</title>
-  <link>https://www.liulp.club/2020/08/%E8%BF%9C%E7%A8%8B%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E6%88%90m3u8%E5%BD%A2%E5%BC%8F/</link>
+  <link>https://www.liulp.club/2020/08/m3u8/</link>
     <description>&lt;p&gt;成功使用远程下载自动切片m3u8，且实现在线播放。&lt;/p&gt;
 &lt;h2 id=&#34;技术博客&#34;&gt;技术博客&lt;/h2&gt;
 &lt;ul&gt;
@@ -351,12 +351,12 @@ LoadFile;
 &lt;/iframe&gt;</description>
   <pubDate>Tue, 18 Aug 2020 19:17:28 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/%E8%BF%9C%E7%A8%8B%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E6%88%90m3u8%E5%BD%A2%E5%BC%8F/</guid>
+  <guid>https://www.liulp.club/2020/08/m3u8/</guid>
 </item>
 
 <item>
   <title>服务器配置相关</title>
-  <link>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</link>
+  <link>https://www.liulp.club/2020/08/baota/</link>
     <description>&lt;p&gt;阿里云服务器启用宝塔面板，配合静态和php搭建各种网站。&lt;/p&gt;
 &lt;p&gt;本文记录我在阿里云和vultr的两台服务器的各种操作，这也是我独门的减压的方法吧。都挺好，就是越弄时间越少，压力越大啊。一直摸鱼可不会一直爽，咳咳。&lt;/p&gt;
 &lt;h2 id=&#34;我的网站&#34;&gt;我的网站&lt;/h2&gt;
@@ -455,12 +455,12 @@ LoadFile;
 &lt;/blockquote&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E7%9B%B8%E5%85%B3/</guid>
+  <guid>https://www.liulp.club/2020/08/baota/</guid>
 </item>
 
 <item>
   <title>夏末与初秋</title>
-  <link>https://www.liulp.club/2020/08/%E5%A4%8F%E6%9C%AB%E4%B8%8E%E5%88%9D%E7%A7%8B/</link>
+  <link>https://www.liulp.club/2020/08/summer_to_fall/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;八月初，立秋至。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -547,12 +547,12 @@ LoadFile;
 &lt;/ul&gt;</description>
   <pubDate>Mon, 10 Aug 2020 09:15:52 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/%E5%A4%8F%E6%9C%AB%E4%B8%8E%E5%88%9D%E7%A7%8B/</guid>
+  <guid>https://www.liulp.club/2020/08/summer_to_fall/</guid>
 </item>
 
 <item>
   <title>pdf.js与iframe</title>
-  <link>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</link>
+  <link>https://www.liulp.club/2020/08/pdf_iframe/</link>
     <description>&lt;p&gt;网站解锁iframe方案&lt;/p&gt;
 &lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
 &lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
@@ -604,12 +604,12 @@ height=&#39;600px&#39;&gt;
 &lt;/blockquote&gt;</description>
   <pubDate>Sun, 02 Aug 2020 14:16:19 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/pdf.js%E4%B8%8Eiframe/</guid>
+  <guid>https://www.liulp.club/2020/08/pdf_iframe/</guid>
 </item>
 
 <item>
   <title>笔记本二三事</title>
-  <link>https://www.liulp.club/2020/07/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
+  <link>https://www.liulp.club/2020/07/laptop/</link>
     <description>&lt;p&gt;近挑新笔记本，费不少心思，实可记录一二&lt;/p&gt;
 &lt;!--toc--&gt;
 &lt;h2 id=&#34;写在前面&#34;&gt;写在前面&lt;/h2&gt;
@@ -661,12 +661,12 @@ height=&#39;600px&#39;&gt;
 &lt;/p&gt;&lt;/p&gt;</description>
   <pubDate>Fri, 31 Jul 2020 09:07:29 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
+  <guid>https://www.liulp.club/2020/07/laptop/</guid>
 </item>
 
 <item>
   <title>赋闲在家</title>
-  <link>https://www.liulp.club/2020/07/%E8%B5%8B%E9%97%B2%E5%9C%A8%E5%AE%B6/</link>
+  <link>https://www.liulp.club/2020/07/leisure/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;在家的第一个两周欧&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -811,12 +811,12 @@ height=&#39;600px&#39;&gt;
 &lt;/ul&gt;</description>
   <pubDate>Tue, 28 Jul 2020 15:33:49 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E8%B5%8B%E9%97%B2%E5%9C%A8%E5%AE%B6/</guid>
+  <guid>https://www.liulp.club/2020/07/leisure/</guid>
 </item>
 
 <item>
   <title>出师表</title>
-  <link>https://www.liulp.club/2020/07/%E5%87%BA%E5%B8%88%E8%A1%A8/</link>
+  <link>https://www.liulp.club/2020/07/memorial/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;刘路平，新的计划开始&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1013,12 +1013,12 @@ height=&#39;600px&#39;&gt;
 &lt;/section&gt;</description>
   <pubDate>Sun, 12 Jul 2020 19:46:43 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E5%87%BA%E5%B8%88%E8%A1%A8/</guid>
+  <guid>https://www.liulp.club/2020/07/memorial/</guid>
 </item>
 
 <item>
   <title>Hugo短命令</title>
-  <link>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</link>
+  <link>https://www.liulp.club/2020/07/hugo/</link>
     <description>&lt;p&gt;Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大丰富且便捷。&lt;/p&gt;
 &lt;h2 id=&#34;技术站点&#34;&gt;技术站点&lt;/h2&gt;
 &lt;ul&gt;
@@ -1088,7 +1088,7 @@ height=&#39;600px&#39;&gt;
 &lt;/code&gt;&lt;/pre&gt;</description>
   <pubDate>Sat, 11 Jul 2020 08:44:41 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/hugo%E7%9F%AD%E5%91%BD%E4%BB%A4/</guid>
+  <guid>https://www.liulp.club/2020/07/hugo/</guid>
 </item>
 
 <item>
@@ -1121,18 +1121,18 @@ height=&#39;600px&#39;&gt;
 
 <item>
   <title>我的图床</title>
-  <link>https://www.liulp.club/2020/07/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A/</link>
+  <link>https://www.liulp.club/2020/07/imgbed/</link>
     <description>&lt;p&gt;我用图床收集快乐，哈哈哈哈哈哈！&lt;/p&gt;
 &lt;p&gt;图床全面采用&lt;code&gt;Github+jsDelivr&lt;/code&gt;，速度全面升级~&lt;/p&gt;
 &lt;h2 id=&#34;图床展示&#34;&gt;图床展示&lt;/h2&gt;</description>
   <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E6%88%91%E7%9A%84%E5%9B%BE%E5%BA%8A/</guid>
+  <guid>https://www.liulp.club/2020/07/imgbed/</guid>
 </item>
 
 <item>
   <title>网站搭建记录</title>
-  <link>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</link>
+  <link>https://www.liulp.club/2020/07/build_web/</link>
     <description>&lt;p&gt;搭建网站需要的技术记录&lt;/p&gt;
 &lt;h2 id=&#34;资源站点&#34;&gt;资源站点&lt;/h2&gt;
 &lt;ul&gt;
@@ -1181,12 +1181,12 @@ height=&#39;600px&#39;&gt;
 &lt;/ul&gt;</description>
   <pubDate>Thu, 09 Jul 2020 12:54:26 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</guid>
+  <guid>https://www.liulp.club/2020/07/build_web/</guid>
 </item>
 
 <item>
   <title>4天计划</title>
-  <link>https://www.liulp.club/2020/07/4%E5%A4%A9%E8%AE%A1%E5%88%92/</link>
+  <link>https://www.liulp.club/2020/07/4_day_plan/</link>
     <description>&lt;blockquote&gt;
 &lt;p&gt;每周学习&lt;strong&gt;40&lt;/strong&gt;小时，加油冲冲！&lt;br&gt;
 刘路平你咸鱼否？&lt;/p&gt;
@@ -1423,7 +1423,7 @@ height=&#39;600px&#39;&gt;
 &lt;/ul&gt;</description>
   <pubDate>Wed, 08 Jul 2020 19:38:59 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/4%E5%A4%A9%E8%AE%A1%E5%88%92/</guid>
+  <guid>https://www.liulp.club/2020/07/4_day_plan/</guid>
 </item>
 
 </channel>
