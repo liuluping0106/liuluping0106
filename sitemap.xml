@@ -1,170 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://www.liulp.club/categories/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/post/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/2020/09/once_more/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.liulp.club/</loc>
     <lastmod>2020-09-27T21:35:16+08:00</lastmod>
   </url>
-  
   <url>
-    <loc>https://www.liulp.club/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://www.liulp.club/2020/09/once_more/</loc>
     <lastmod>2020-09-27T21:35:16+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E8%AE%A1%E5%88%92/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/categories/%E8%AE%A1%E5%88%92/</loc>
-    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/09/application/</loc>
     <lastmod>2020-09-12T21:49:47+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/m3u8/</loc>
-    <lastmod>2020-08-18T19:17:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-08-18T19:17:28+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-08-18T19:17:28+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/08/m3u8/</loc>
     <lastmod>2020-08-18T19:17:28+08:00</lastmod>
   </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/08/baota/</loc>
     <lastmod>2020-08-13T10:26:36+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2020-08-13T10:26:36+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/08/summer_to_fall/</loc>
     <lastmod>2020-08-10T09:15:52+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/iframe/</loc>
-    <lastmod>2020-08-02T14:16:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/pdf/</loc>
-    <lastmod>2020-08-02T14:16:19+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/08/pdf_iframe/</loc>
     <lastmod>2020-08-02T14:16:19+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
-    <lastmod>2020-07-31T09:07:29+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/laptop/</loc>
     <lastmod>2020-07-31T09:07:29+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2020-07-31T09:07:29+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2020-07-28T15:33:49+08:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/leisure/</loc>
     <lastmod>2020-07-28T15:33:49+08:00</lastmod>
   </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/memorial/</loc>
     <lastmod>2020-07-12T19:46:43+08:00</lastmod>
   </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/hugo/</loc>
     <lastmod>2020-07-11T08:44:41+08:00</lastmod>
   </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/oneindex/</loc>
     <lastmod>2020-07-10T10:43:20+08:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E7%BD%91%E7%9B%98/</loc>
-    <lastmod>2020-07-10T10:43:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/imgbed/</loc>
     <lastmod>2020-07-10T00:00:00+00:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://www.liulp.club/tags/%E7%94%BB%E5%BB%8A/</loc>
-    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/build_web/</loc>
     <lastmod>2020-07-09T12:54:26+08:00</lastmod>
   </url>
-  
   <url>
     <loc>https://www.liulp.club/2020/07/4_day_plan/</loc>
     <lastmod>2020-07-08T19:38:59+08:00</lastmod>
   </url>
-  
+  <url>
+    <loc>https://www.liulp.club/categories/</loc>
+    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://www.liulp.club/tags/</loc>
+    <lastmod>2020-09-27T21:35:16+08:00</lastmod>
+  </url>
 </urlset>
