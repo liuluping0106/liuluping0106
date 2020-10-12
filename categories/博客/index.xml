@@ -2,6 +2,46 @@
 <channel>
 
 <item>
+  <title>研究生申请</title>
+  <link>https://www.liulp.club/2020/10/offer_get/</link>
+    <description>&lt;p&gt;一个月的申请在昨天填报志愿后最终告一段落，写点什么记录我的申请季吧。&lt;/p&gt;
+&lt;!--toc--&gt;
+&lt;p&gt;8月30日，我给z老师发出了申请人工智能方向的邮件，也许多年以后，我才能真正明白那一刻的意义吧。&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20201012101342.webp class=&#34;lazyload&#34; alt=&#34;刘路平的主页&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;数学行&#34;&gt;数学行&lt;/h2&gt;
+&lt;p&gt;今年暑假，我跟随罗格斯的s教授进行了一个暑假的暑期科研，研究双曲几何相关的问题。因为疫情没法前往美国，我们商量通过邮件的方式进行交流。&lt;/p&gt;
+&lt;p&gt;研究从五月份就断断续续地展开了，因为今年暑假格外的长，我有充足的时间进行暑期科研。先后阅读了 J. Kahn 和 V. Markovic 的 &lt;code&gt;&amp;quot;Immersing almost geodesic surfaces in a closed hyperbolic three manifold&amp;quot;&lt;/code&gt; 和 Ursula Hamenstädt 的 &lt;code&gt;&amp;quot;Incompressible Surfaces in Rank One Locally Symmetric Spaces&amp;quot;&lt;/code&gt; 两篇论文。在学习的过程中，我时而为学到新的方法而欢喜鼓舞，但很多时候，我都被一种悲伤的情绪所笼罩，很难集中精力打起精神来学习。感觉纯数学的科学研究充满了挑战，但是我很难跟这种挑战产生灵魂的共鸣。老班w老师得知我转行时问我，做出了这样的成果，你会发自内心的快乐和满足么？我的答案并不那么肯定。&lt;/p&gt;
+&lt;p&gt;回想起自己小学第一次拿起奥赛课本学习鸡兔同笼问题，为了研究明白，反复思索许久，最终理解其中应有之义。总是内心想着做最厉害的数学人，那是不是应该什么都一点即通，一学就会。现在想来，我总是被这个自己想出来的标准，搞得忧心忡忡，而一定程度上忽视了数学本身的美。与数学度过了十余年的时光，感觉自己还是困在这个自己设定的牢笼里。如今，真的走远了，可能更能用一个旁观者的角度，去思考当年的我吧。&lt;/p&gt;
+&lt;h2 id=&#34;决定转行&#34;&gt;决定转行&lt;/h2&gt;
+&lt;p&gt;暑研接近尾声的时候，我渐渐清晰了转行的想法。综合目前跨学科背景薄弱，自己的兴趣方面和浙大计算机的强势。做出留在浙大读人工智能的硕士并不是个很难的决定了。&lt;/p&gt;
+&lt;p&gt;决定转行后，我也咨询了认识的老师，学长还有同学，具体了解了计院对数学背景学生的欢迎程度。感觉确实自己的背景是蛮受欢迎的，也一定程度上弥补了我计算机方向的背景薄弱，这更给了我转行的信心。通过同学推荐，我了解到了z老师，其实说来有趣，我认定他的原因是他那甚至还有点稚气照片让我觉得此人肯定很投缘，想来自己也许是个颜控吧。现在想来，z老师也确实在我紧张的申请时间里给到了我很多的帮助。可以说自己的运气现在开来还蛮不错的。&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20201012105017.webp class=&#34;lazyload&#34; alt=&#34;刘路平的主页&#34;/&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;极限申请&#34;&gt;极限申请&lt;/h2&gt;
+&lt;p&gt;其实我决定转的时间实在是太晚了，很多外校的申请已经截止了。倒是我本就打算申请本校，所以也没有感觉太过遗憾。由于申请考试的具体时间因为疫情拖延迟迟没有确定，我也准备的有点动力不足。到软院发通知准备机试面试的时候，只给我留了三天半的时间，而这之前我还兴冲冲地参加高联阅卷，去赚了两天快钱。然后注定是极限操作啦……&lt;/p&gt;
+&lt;p&gt;软院的机试我做的并不顺利，第一题多项式的模拟，我把问题想复杂了。谁让自己之前做多项式乘法的时候没有把点都跑过，就有点小忐忑。花了不少时间，加上犯了一个直接想不到的循环的错误，倒是没能拿全分。第二题是一个算法题，我开始给出了一个简洁的方法，但是最后一步把问题想的太简单了，只跑对了一部分的点。临进结束想到了做法，可惜需要改动不小，只能作罢。第三题是练的最熟的格式化的问题，花了时间成功满分，这也是我唯一满分的题目。第四题是一个控制复杂度的问题，时间不够，我只好无脑做了，也拿到了不少的分数。这一番操作，最后得了70分，考完都有点心态不好了。&lt;/p&gt;
+&lt;p&gt;晚上，难以安心给z老师发了邮件表示自己录取困难了。z老师，看到邮件立刻给我打来电话，安慰我没问题，还帮我出谋划策，润色简历。甚至第二天还帮我联系了一个学长，为我辅导面试。真的很感谢老师和学长的帮助，让我抗过了压力最大的几天。&lt;/p&gt;
+&lt;p&gt;机试后是面试，我的ppt被z老师一顿批评，当时信心满满的我有点爆炸，最后我还是决定按着自己的style来。所幸面试的时候，软院的老师可能也非常理解我这样的学生的情况，并没有难为我，进行的非常的顺利。面试完z老师问了一下面试的情况，表示我基本稳了。但是不到真正录取，这谁都说不好的，几天后，排名公布，心中的大石头才最后落下了。&lt;/p&gt;
+&lt;p&gt;现在想来，那几天的生活是真的魔幻的很，而我真的度过了那几天。&lt;/p&gt;
+&lt;h2 id=&#34;研究计划&#34;&gt;研究计划&lt;/h2&gt;
+&lt;p&gt;正式录取后，跟老师聊了之后的计划。大四我先跟着学长做项目（全组也没有一个学姐，大雾），争取一个三作。为了今后读博的话，考出TOEFL和GRE，不要到正式进如研究阶段还要为这个分心。真的到了研究阶段，就是自己干了，老师希望我能在研究生阶段发5篇paper，当然他还说了些竺奖国奖的期许，哈哈哈哈。他很为自己的学生年年国奖而骄傲，哎，真像个孩子啊。&lt;/p&gt;
+&lt;p&gt;目前我还在看简单的&lt;code&gt;Pytorch&lt;/code&gt;和&lt;code&gt;Python&lt;/code&gt;。计划接下来就跟学长做语音方面的深度学习问题。接下来，就看我的啦。&lt;/p&gt;
+&lt;p&gt;昨天晚上，正式在录取系统里，填完了自己的志愿，录取到浙江大学软件学院，算是为自己的申请季画上了圆满的句号。看到pyq很多成功录取到清北的同学，不过我已经不是当年那个考败来浙的悲伤青年，由衷地为他们感到高兴。希望大家都能在今后的学习生活中收获自己的成长吧，加油，少年！&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20201012113336.webp class=&#34;lazyload&#34; alt=&#34;刘路平的主页&#34;/&gt;
+&lt;/p&gt;</description>
+  <pubDate>Mon, 12 Oct 2020 09:52:59 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2020/10/offer_get/</guid>
+</item>
+
+<item>
   <title>远程下载视频成m3u8形式</title>
   <link>https://www.liulp.club/2020/08/m3u8/</link>
     <description>&lt;p&gt;成功使用远程下载自动切片m3u8，且实现在线播放。&lt;/p&gt;
@@ -182,8 +222,7 @@ LoadFile;
         }
         alert(&#39;成功复制API到剪贴板&#39;);
     };
-&lt;/script&gt;&lt;blockquote&gt;
-&lt;/blockquote&gt;</description>
+&lt;/script&gt;</description>
   <pubDate>Thu, 13 Aug 2020 10:26:36 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/08/baota/</guid>
