@@ -3,7 +3,7 @@
 
 <item>
   <title>申请札记</title>
-  <link>https://www.liulp.club/2020/10/offer_get/</link>
+  <link>https://www.liulp.club/2020/10/offer-get/</link>
     <description>&lt;p&gt;一个月的申请在昨天填报志愿后最终告一段落，写点什么记录我的申请季吧。&lt;/p&gt;
 &lt;!--toc--&gt;
 &lt;p&gt;8月30日，我给z老师发出了申请人工智能方向的邮件，也许多年以后，我才能真正明白那一刻的意义吧。&lt;/p&gt;
@@ -38,7 +38,7 @@
 &lt;/p&gt;</description>
   <pubDate>Mon, 12 Oct 2020 09:52:59 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/10/offer_get/</guid>
+  <guid>https://www.liulp.club/2020/10/offer-get/</guid>
 </item>
 
 <item>
@@ -230,7 +230,7 @@ LoadFile;
 
 <item>
   <title>pdf.js与iframe</title>
-  <link>https://www.liulp.club/2020/08/pdf_iframe/</link>
+  <link>https://www.liulp.club/2020/08/pdf-iframe/</link>
     <description>&lt;p&gt;网站解锁iframe方案&lt;/p&gt;
 &lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
 &lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
@@ -282,7 +282,7 @@ height=&#39;600px&#39;&gt;
 &lt;/blockquote&gt;</description>
   <pubDate>Sun, 02 Aug 2020 14:16:19 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/08/pdf_iframe/</guid>
+  <guid>https://www.liulp.club/2020/08/pdf-iframe/</guid>
 </item>
 
 <item>
@@ -458,7 +458,7 @@ height=&#39;600px&#39;&gt;
 
 <item>
   <title>网站搭建记录</title>
-  <link>https://www.liulp.club/2020/07/build_web/</link>
+  <link>https://www.liulp.club/2020/07/build-web/</link>
     <description>&lt;p&gt;搭建网站需要的技术记录&lt;/p&gt;
 &lt;h2 id=&#34;资源站点&#34;&gt;资源站点&lt;/h2&gt;
 &lt;ul&gt;
@@ -507,7 +507,7 @@ height=&#39;600px&#39;&gt;
 &lt;/ul&gt;</description>
   <pubDate>Thu, 09 Jul 2020 12:54:26 +0800</pubDate>
   
-  <guid>https://www.liulp.club/2020/07/build_web/</guid>
+  <guid>https://www.liulp.club/2020/07/build-web/</guid>
 </item>
 
 </channel>
