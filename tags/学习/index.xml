@@ -71,7 +71,32 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;十月第四周&#34;&gt;十月第四周&lt;/h2&gt;</description>
+&lt;h3 id=&#34;1018&#34;&gt;10.18&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;继续阅读&lt;code&gt;Domain Adaptation&lt;/code&gt;相关的论文 $\checkmark$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;十月第四周&#34;&gt;十月第四周&lt;/h2&gt;
+&lt;h3 id=&#34;1019&#34;&gt;10.19&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;分析&lt;code&gt;MDD&lt;/code&gt;源代码 $\checkmark$&lt;/li&gt;
+&lt;li&gt;使用&lt;code&gt;MDD&lt;/code&gt;作为原型实现特化迁移学习 $\checkmark$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1020&#34;&gt;10.20&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;code&gt;MDD&lt;/code&gt;作为原型实现特化迁移学习 $\checkmark$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;今日小结：
+&lt;ul&gt;
+&lt;li&gt;成功在原模型基础上，在&lt;code&gt;D2A&lt;/code&gt;情形提升了两个多点!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p align=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20201021122126.webp class=&#34;lazyload&#34; alt=&#34;刘路平的主页&#34;/&gt;
+&lt;/p&gt;</description>
   <pubDate>Tue, 13 Oct 2020 19:06:54 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/10/paper123/</guid>
