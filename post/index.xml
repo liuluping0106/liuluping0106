@@ -43,7 +43,7 @@
 &lt;h3 id=&#34;1028&#34;&gt;10.28&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;整理 &lt;code&gt;Distillation&lt;/code&gt;相关的论文
-$$f_s=arg min_{f\in \mathcal{F}_s}\frac{1}{n}\sum_{i=1}^n[(1-\lambda)l(y_i,\sigma(f(x_i)))+\lambda l(s_i,\sigma(f(x_i)))],\ s_i=\sigma(f_t(x_i)/T)$$&lt;/li&gt;
+$$f_s=\mathop{arg\ min}\limits_{f\in \mathcal{F}_s}\frac{1}{n}\sum_{i=1}^n[(1-\lambda)l(y_i,\sigma(f(x_i)))+\lambda l(s_i,\sigma(f(x_i)))],\ s_i=\sigma(f_t(x_i)/T)$$&lt;/li&gt;
 &lt;/ul&gt;</description>
   <pubDate>Mon, 26 Oct 2020 09:48:21 +0800</pubDate>
   
