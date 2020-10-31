@@ -100,7 +100,7 @@ function runtime(){// 初始时间，日/月/年 时:分:秒
     c = (b-B)*60;
     C = Math.floor((b-B)*60);
     D = Math.floor((c-C)*60);//信息写入到DIV中
-    spantime.innerHTML = A+"天"+B+"小时"+C+"分"+D+"秒"}setInterval(runtime, 1000);
+    spantime.innerHTML = A+"d"+B+"h"+C+"m"+D+"s"}setInterval(runtime, 1000);
   
   // viewer初始化
     if (document.getElementById('upper_ele')) {
