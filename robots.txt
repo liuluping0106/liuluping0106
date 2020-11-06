@@ -1,7 +1,4 @@
 # robots.txt used by https://www.liulp.club
 User-agent: *
-Disallow: /tags
-Disallow: /post
-Disallow: /categories
 
 Sitemap: https://www.liulp.club/sitemap.xml
