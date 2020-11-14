@@ -14,7 +14,7 @@
 &lt;p&gt;说CPU之前要先说说散热，这个参数是你往往看不到的，而其实所谓选散热就是选什么品牌系列的笔记本，一个系列往往用一样的模具，散热能力也是相近的。所以当你决定买某一家的笔记本的时候，一定要了解这个系列的散热怎么样，这直接决定了笔记本的性能能不能得到发挥，以及笔记本会不会分分钟变成暖手宝。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060430.jpg class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060430.jpg class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;
 &lt;p&gt;在以往PC端的CPU，intel是一家独大，但是今年amd异军突起，除了i5和i7，R5和R7现在也是不错的选择，可谓是“AMD YES”。而当我们查看配置的时候，往往会看到R7-4800H, i5-10210U，那么这里的R7，i5我们已经介绍过了。后面的参数又是什么呢？这个4800，10210就是第几代，往往一年更新一代，简单来说下一代的i5基本能达到上一代i7的水平，所以千万不要以为i7的处理器一定就比i5好，还要看是第几代。而最后的H，U代表了是标压，低压等等。虽然CPU是一样的，但是由于散热，功耗等等问题，CPU的性能未必能完全发挥，譬如U就是限制CPU只能处于低压状态，所以一个低压的i7轻松被标压的i5吊打，只能说是巧妇难为无米之炊。所以，这一点也要注意，我之前就是选了一个低压的i7，又贵性能又不行，实在是智商税。&lt;/p&gt;
 &lt;p&gt;因为CPU种类代数繁多，CPU天梯图就是一个很好的参考，详细图片请在文末查看。&lt;/p&gt;
@@ -22,21 +22,21 @@
 &lt;p&gt;如今的显卡市场仍是NVIDIA一家独大，所以大家挑选就是从他们家不同系列中挑选啦。其中主要有GTX和新的RTX系列，最近推出的RTX20系列采用图灵架构，添加了深度学习和光线追踪两个新模块，引入了DISS2.0的技术。简单来说就是大幅提高了显卡的性能，当然价格也是更贵了一些。下图的就是RTX2060，感受到它的力量了么。可以说，现在还选购10系列显卡，就有点49年加入国军的感觉，所以各位预算允许，不妨入手最新系列的显卡。另外值得注意的是，虽然游戏本配高显卡给人一种不玩游戏就没必要买好显卡的感觉，但是其实显卡也有其他的用处。现在很多处理软件，像Adobe全家桶还有格式工厂，都支持GPU加速，让我们在图片视频处理等工作中大大提高效率。所以，显卡也是特殊的生产力工具，而非单单游戏工具。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060442.jpg class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060442.jpg class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;
 &lt;p&gt;同样的文末附有最新的GPU天梯图供大家参考。&lt;/p&gt;
 &lt;h2 id=&#34;屏幕&#34;&gt;屏幕&lt;/h2&gt;
 &lt;p&gt;说到屏幕，主要参数包括色域和刷新率。色域就是屏幕能够显示多大范围的颜色，而刷新率就是屏幕每分钟刷新多少次。需要注意的是，色域的标准有很多，而其中比较常见的有sRGB、NTSC、Adobe RGB、CMYK等，由于标准不一，100%sRGB才相当于72%NTSC，所以不是只看前面的百分数就可以了。具体常见标准的色彩范围比例如下图所示。现在一般推荐选择主流的100%sRGB的屏幕，过高的色域也会存在不适配的问题，不是专业修图，主流的就好。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/aQPJH0&amp;#32;(1).jpg class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/aQPJH0&amp;#32;(1).jpg class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;
 &lt;p&gt;对于刷新率，主流的有60hz和144hz。144hz的屏幕好处是留影少，画面更加连贯流畅，减少撕裂感。而这其实也是需要显卡对应的提升，所以如果是GTX1650及以下的显卡，直接60hz屏幕就好啦。&lt;/p&gt;
 &lt;h2 id=&#34;硬盘&#34;&gt;硬盘&lt;/h2&gt;
 &lt;p&gt;硬盘分为两大类，老式的机械硬盘和新式的固态硬盘（Solid State Drive）。机械硬盘主要看转数，7200转的就比3600转的读取速度快。而固态硬盘又分为几类，根据颗粒分为SLC\MLC\TLC等。越往前的种类单个存储单元存储数据越少，因而越贵。但其性能寿命也越好，具体储存区别如下图。根据接口分为老式的SATA和新式的M.2，后者的速度理论可以达到3000MB/S。根据线路分为老式SATA总线和新的PCI-E总线。SATA的线路和接口会限制固态性能的发挥，现在主流的固态都是对应选用M.2接口和PCI-E总线了。&lt;/p&gt;
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060431.jpg class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200802060431.jpg class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;写在后面&#34;&gt;写在后面&lt;/h2&gt;
 &lt;p&gt;有过选购经历不难发现，越是小厂的产品同价位直面数据都会更好看一些，但是大厂的优势不仅仅在售后和产品稳定性上。单从性能来开，小厂的产品因为适配和散热的问题，往往不能发挥高性能CPU和显卡的全部能力，往往是看着好看，但实际捉急。但不可否认的是，往往小厂的产品具有更好的性价比，这也是小厂赖以生存的必备技能。而对于大厂如联想，dell，也有相对高性价比的走量产品，买这样的产品往往兼顾一定的性价比，也更省事省心，售后也有保障。当然，这总是个见仁见智的问题，需要大家自己做选择了。&lt;/p&gt;
@@ -46,12 +46,12 @@
 &lt;p&gt;CPU天梯图：
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808165451.webp class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808165451.webp class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;GPU天梯图：
 &lt;p align=&#34;center&#34;&gt;
     &lt;img src=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808091550.gif&#34;
-    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808171929.webp class=&#34;lazyload&#34; alt=&#34;未命名_刘路平的主页&#34;/&gt;
+    data-original=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200808171929.webp class=&#34;lazyload&#34; alt=&#34;未命名 刘路平的主页&#34;/&gt;
 &lt;/p&gt;&lt;/p&gt;</description>
   <pubDate>Fri, 31 Jul 2020 09:07:29 +0800</pubDate>
   
