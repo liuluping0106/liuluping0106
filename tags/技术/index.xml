@@ -195,7 +195,7 @@ LoadFile;
 &lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
 &lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;pdfiframe&amp;quot; 
-    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.pdf&amp;quot; 
+    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;quot; 
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/Terence_Tao_Analysis_I.pdf&#34; 
@@ -205,7 +205,7 @@ LoadFile;
 
 &lt;h2 id=&#34;epubjs内嵌网页&#34;&gt;epub.js内嵌网页&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;epubiframe&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; 
-    src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.epub&amp;quot;
+    src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&amp;quot;
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
@@ -291,7 +291,7 @@ height=&#39;600px&#39;&gt;
    class=&amp;quot;video-js vjs-big-play-centered vjs-fluid&amp;quot;
    controls
    preload=&amp;quot;auto&amp;quot;
-   poster=&amp;quot;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/UwOm5D.jpg&amp;quot;
+   poster=&amp;quot;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/UwOm5D.jpg&amp;quot;
    data-setup=&amp;quot;{}&amp;quot; &amp;gt;
    &amp;lt;source src={{.Get 0 }} type=&amp;quot;video/mp4&amp;quot; /&amp;gt;
    {{ if .Get 1 }}&amp;lt;track src= {{.Get 1}} srclang=&amp;quot;By Mydrive&amp;quot;  kind=&amp;quot;subtitles&amp;quot; default&amp;gt;
@@ -305,7 +305,7 @@ height=&#39;600px&#39;&gt;
 
 &lt;h3 id=&#34;代码-2&#34;&gt;代码&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;pdfiframe&amp;quot; 
-    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/{{.Get 0 }}.pdf&amp;quot; 
+    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;quot; 
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;问卷效果&#34;&gt;问卷效果&lt;/h2&gt;
