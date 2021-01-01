@@ -11,6 +11,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.liulp.club/2021/01/new_year_happy/</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <lastmod>2021-01-01T09:24:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.liulp.club/2020/12/new_year_study/</loc>
     <mobile:mobile type="pc,mobile"/>
     <lastmod>2020-12-31T22:44:53+08:00</lastmod>
@@ -126,17 +132,17 @@
   </url>
   <url>
     <loc>https://www.liulp.club/</loc>
-    <lastmod>2020-12-31T22:44:53+08:00</lastmod>
+    <lastmod>2021-01-01T09:24:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.liulp.club/categories/</loc>
-    <lastmod>2020-12-31T22:44:53+08:00</lastmod>
+    <lastmod>2021-01-01T09:24:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.liulp.club/tags/</loc>
-    <lastmod>2020-12-31T22:44:53+08:00</lastmod>
+    <lastmod>2021-01-01T09:24:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
