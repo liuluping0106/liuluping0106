@@ -27,11 +27,16 @@
 &lt;/p&gt;
 &lt;p&gt;未完待续……&lt;/p&gt;
 &lt;h2 id=&#34;影视&#34;&gt;影视&lt;/h2&gt;
-&lt;div style=&#34;position: relative;&#34;&gt;
-    &lt;iframe id=&#34;biiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
-    src=&#34;//player.bilibili.com/player.html?bvid=BV1si4y1w7UN&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
+&lt;video
+   class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
+   controls
+   preload=&#34;auto&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/image/20200810212537.webp&#34;
+   data-setup=&#34;{}&#34;
+ &gt;
+   &lt;source src=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f/81b7dadd0f0e9ff7fd245a9e1732a26b/2020%E5%B9%B4%E5%BA%A6%E6%B7%B7%E5%89%AA.mp4 /&gt;
+   
+&lt;/video&gt;
 &lt;h2 id=&#34;戏剧&#34;&gt;戏剧&lt;/h2&gt;
 &lt;h2 id=&#34;技术&#34;&gt;技术&lt;/h2&gt;</description>
   <pubDate>Fri, 01 Jan 2021 09:17:25 +0800</pubDate>
