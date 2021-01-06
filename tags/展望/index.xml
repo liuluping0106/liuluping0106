@@ -42,17 +42,17 @@
 &lt;h2 id=&#34;技术&#34;&gt;技术&lt;/h2&gt;
 &lt;p&gt;春夏考试周结束，我一时兴起建立一个小站，从最初只能写简单的博客，到各种更加丰富的UI和功能。到如今已经运行了小两百天了。看着小站一点点成长丰富，真的开心！建站之初，总是时不时想到新的想添加的功能，也总是遇到各种各样的问题，常常看着很简单，一实现起来就是一天甚至几天。现在想来，种种细节，真的蛮有成就感。&lt;/p&gt;
 &lt;p&gt;这个冬天为了玩江南百景图，又折腾起了安卓模拟器，学了简单的&lt;code&gt;lua脚本&lt;/code&gt;设计。哈哈，解放双手，自动刷经验。刷经验事小，真正看到自己的脚本work了，是更有成就感。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;x=-1
-i=0
-while (x==-1) do
-    moveTo(1000+i, 700, 1000+i, 300, {[&amp;quot;step&amp;quot;] = 20,[&amp;quot;ms&amp;quot;] = 70,[&amp;quot;index&amp;quot;] = 1,[&amp;quot;stop&amp;quot;] = 1})
-    mSleep(800)
-    x,y = findImage(&amp;quot;shan.png&amp;quot;, 0, 0, 1600, 900)
-end
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;x&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; (x&lt;span style=&#34;color:#f92672&#34;&gt;==-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+    moveTo(&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i, &lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;i, &lt;span style=&#34;color:#ae81ff&#34;&gt;300&lt;/span&gt;, {[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;step&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ms&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;70&lt;/span&gt;,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;index&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;stop&amp;#34;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;})
+    mSleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
+    x,y &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; findImage(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;shan.png&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1600&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;900&lt;/span&gt;)
+&lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt;
 
 tap(x,y)
-mSleep(800)
-&lt;/code&gt;&lt;/pre&gt;</description>
+mSleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
   <pubDate>Fri, 01 Jan 2021 09:17:25 +0800</pubDate>
   
   <guid>https://www.liulp.club/2021/01/new_year_happy/</guid>
