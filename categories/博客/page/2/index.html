@@ -563,7 +563,13 @@ $(document).ready(function() {
 
 <script>
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-xhr.onreadystatechange = function (){alert(xhr.responseText+"test")};
+xhr.onreadystatechange = function (){
+  alert(xhr.responseText);
+  var tele = document.getElementById('laout');
+  if(tele){
+    tele.innerHTML = allout;
+  };
+};
 xhr.open('get','https://www.liulp.club/pv/result.json', false);
 xhr.send();
 
