@@ -198,9 +198,9 @@ LoadFile;
     src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;quot; 
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
-    width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
+&gt;&lt;/iframe&gt;
 
 
 &lt;h2 id=&#34;epubjs内嵌网页&#34;&gt;epub.js内嵌网页&lt;/h2&gt;
@@ -208,9 +208,9 @@ LoadFile;
     src=&amp;quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&amp;quot;
     width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
 &amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34;  src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
-    width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;iframe id=&#34;epubiframe&#34; width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;
+src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub&#34;
+&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&#34;md5密文内嵌&#34;&gt;MD5密文内嵌&lt;/h2&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;md5iframe&amp;quot;
@@ -279,7 +279,7 @@ height=&#39;600px&#39;&gt;
    class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
    controls
    preload=&#34;auto&#34;
-   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20200810212537.webp&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106181838.webp&#34;
    data-setup=&#34;{}&#34;
  &gt;
    &lt;source src=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f/464844dd63b9224c03b47c36795b9844/video01.mp4 /&gt;
@@ -297,9 +297,9 @@ height=&#39;600px&#39;&gt;
     {{ else }}{{end}}
 &amp;lt;/video&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
-&lt;iframe id=&#34;pdfiframe&#34; src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
-    width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
+&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
+&gt;&lt;/iframe&gt;
 
 
 &lt;h3 id=&#34;代码-2&#34;&gt;代码&lt;/h3&gt;
