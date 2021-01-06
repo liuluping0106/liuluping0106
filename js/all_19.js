@@ -114,25 +114,34 @@ function runtime(){// 初始时间，日/月/年 时:分:秒
   
 
 //------------------------------------------
-// 51La格式化
+// 加载PV
 //------------------------------------------
-function viewchange(){
-  var ele = document.getElementById('la_20899205');
-  allt = ele.firstChild;
-  if(allt){
-    alltin = allt.innerHTML;
-    if(alltin){
-      st = alltin.split("&nbsp;");
-      allout = st[1].replace(',','');
-      // ele.innerHTML= '';
-      var tele = document.getElementById('laout');
-      if(tele){
-        tele.innerHTML = allout;
-      }
-    }
-  }
-}setInterval(viewchange, 500);
-
+// function viewchange(){
+//   var ele = document.getElementById('la_20899205');
+//   allt = ele.firstChild;
+//   if(allt){
+//     alltin = allt.innerHTML;
+//     if(alltin){
+//       st = alltin.split("&nbsp;");
+//       allout = st[1].replace(',','');
+//       // ele.innerHTML= '';
+//       var tele = document.getElementById('laout');
+//       if(tele){
+//         tele.innerHTML = allout;
+//       }
+//     }
+//   }
+// }setInterval(viewchange, 500);
+var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+xhr.onreadystatechange = function (){
+  alert(xhr.responseText);
+  var tele = document.getElementById('laout');
+  if(tele){
+    tele.innerHTML = xhr.responseText;
+  };
+};
+xhr.open('get','https://www.liulp.club/pv/result.json', false);
+xhr.send();
 
 //------------------------------------------
 // 51La上传代码
