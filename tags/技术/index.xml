@@ -279,7 +279,7 @@ height=&#39;600px&#39;&gt;
    class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
    controls
    preload=&#34;auto&#34;
-   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106181838.webp&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp&#34;
    data-setup=&#34;{}&#34;
  &gt;
    &lt;source src=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f/464844dd63b9224c03b47c36795b9844/video01.mp4 /&gt;
