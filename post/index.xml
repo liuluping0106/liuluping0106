@@ -40,7 +40,7 @@
 &lt;/video&gt;&lt;/p&gt;
 &lt;p&gt;秋冬交替之际，本来打算去看电影，却意外看到了开心麻花的舞台剧。从此一发而不可收拾，从《了不起的爹地》，《乌龙山伯爵》，《莎士比亚别生气》到《贼想得到你》。小半年下来，竟然没有错过开心麻花杭州站的每一场演出。另外，还被yh同学带入坑了音乐剧&lt;code&gt;Les Misérables&lt;/code&gt;，真的十分十分的惊艳，让人看了多少遍都还想再看一遍。虽然看过原著，但是音乐剧版本确实是另一种美妙的展开方式。&lt;/p&gt;
 &lt;h2 id=&#34;技术&#34;&gt;技术&lt;/h2&gt;
-&lt;p&gt;春夏考试周结束，我一时兴起建立一个小站，从最初只能写简单的博客，到各种更加丰富的UI和功能。有尾部&lt;code&gt;Github&lt;/code&gt;式标签，独立站内搜索，相关文章推荐，还有支持&lt;code&gt;epub,pdf,video,m3u8&lt;/code&gt;的展示等等。看着小站一点点成长丰富，真的开心！站点运行小200天时间，时不时想到新的想添加的功能，也总是遇到各种各样的问题，一个功能常常看着很简单，一实现起来就是一天甚至几天。现在想来，种种细节，真的蛮有成就感。&lt;/p&gt;
+&lt;p&gt;春夏考试周结束，我一时兴起建立一个小站，从最初只能写简单的博客，到各种更加丰富的UI和功能。有尾部&lt;code&gt;Github&lt;/code&gt;式标签，独立站内搜索，相关文章推荐，还有支持epub, pdf, video, m3u8的展示等等。看着小站一点点成长丰富，真的开心！站点运行小200天时间，时不时想到新的想添加的功能，也总是遇到各种各样的问题，一个功能常常看着很简单，一实现起来就是一天甚至几天。现在想来，种种细节，真的蛮有成就感。&lt;/p&gt;
 &lt;p&gt;这个冬天为了玩江南百景图，又折腾起了安卓模拟器，学了简单的&lt;code&gt;lua脚本&lt;/code&gt;设计。哈哈，解放双手，自动刷经验。刷经验事小，真正看到自己的脚本work了，是更有成就感。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-lua&#34; data-lang=&#34;lua&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;-- 模拟滑动并按条件点击&lt;/span&gt;
 x&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
