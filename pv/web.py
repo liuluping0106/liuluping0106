@@ -2,7 +2,7 @@ import requests
 import json
 import os
 
-f1 = open(os.path.abspath('.')+'\\token', "r+")
+f1 = open(os.path.abspath('.')+'/token', "r+")
 access_token = f1.readline()
 f1.close()
 
@@ -32,7 +32,7 @@ if state is None:
     state = json.loads(res.text)
     print(state)
     data['access_token'] = state.get('access_token')
-    f1 = open(os.path.abspath('.')+'\\token', "r+")
+    f1 = open(os.path.abspath('.')+'/token', "r+")
     access_token = f1.writelines(str(state.get('access_token')))
     f1.close()
 
@@ -40,5 +40,5 @@ if state is None:
     state = json.loads(res.text).get('result')
 
 print(state.get('sum')[0][0])
-f2 = open(os.path.abspath('.')+'\\result.json', "r+")
+f2 = open(os.path.abspath('.')+'/result.json', "r+")
 f2.writelines(str(state.get('sum')[0][0]))
