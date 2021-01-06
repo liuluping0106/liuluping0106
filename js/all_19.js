@@ -48,7 +48,7 @@
 //lazyload
 //------------------------------------------
 $(function() {
-    $("img.lazyload").lazyload({threshold :120});
+    $("img.lazyload").lazyload({threshold :100});
 });
 
 
