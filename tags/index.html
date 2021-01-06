@@ -1187,10 +1187,9 @@ $(document).ready(function() {
 
 <script>
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-
-xhr.open('get','https://analytic.liulp.club/pv/result.json', true);
+xhr.open('get','https://analytic.liulp.club/pv/result.json', false);
 xhr.setRequestHeader('accept', 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9');
 xhr.send();
-xhr.onreadystatechange = function (){alert(xhr.responseText+"test")};
+
 </script>
 </html>
