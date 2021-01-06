@@ -120,7 +120,6 @@ var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
 xhr.onreadystatechange = function (){
     var tele = document.getElementById('laout');
     if(tele && xhr.responseText){
-        alert(xhr.responseText)
       tele.innerHTML = xhr.responseText;
     };
   };
