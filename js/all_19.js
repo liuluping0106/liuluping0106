@@ -133,16 +133,15 @@ function runtime(){// 初始时间，日/月/年 时:分:秒
 //   }
 // }setInterval(viewchange, 500);
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
-xhr.onreadystatechange = function (){
-  alert(xhr.responseText);
-  var tele = document.getElementById('laout');
-  if(tele){
-    tele.innerHTML = xhr.responseText;
-  };
-};
+
 xhr.open('get','https://www.liulp.club/pv/result.json', false);
 xhr.send();
-
+xhr.onreadystatechange = function (){
+    var tele = document.getElementById('laout');
+    if(tele){
+      tele.innerHTML = xhr.responseText;
+    };
+  };
 //------------------------------------------
 // 51La上传代码
 //------------------------------------------
