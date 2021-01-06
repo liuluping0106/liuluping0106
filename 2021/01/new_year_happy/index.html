@@ -860,8 +860,7 @@ $(document).ready(function() {
 var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
 xhr.open('get','https://analytic.liulp.club/pv/result.json',true);
 xhr.send();
-xml = xhr.responseXML;
-alert(xml+"test");
+alert(xhr.responseText+"test");
 </script>
     
     
