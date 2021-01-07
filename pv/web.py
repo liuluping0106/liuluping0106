@@ -41,4 +41,9 @@ if state is None:
 
 print(state.get('sum')[0][0])
 f2 = open(os.path.abspath('.')+'/result.json', "r+")
-f2.writelines(str(state.get('sum')[0][0]))
+pv = state.get('sum')[0][0]
+f2.writelines(str(pv))
+f2.close()
+f2 = open(os.path.abspath('.')+'/pv.js', "r+")
+f2.writelines(f'var pv = {pv}  ;')
+f2.close()
