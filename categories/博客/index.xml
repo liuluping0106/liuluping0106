@@ -332,11 +332,11 @@ LoadFile;
 &lt;p&gt;iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！&lt;/p&gt;
 &lt;h2 id=&#34;pdfjs内嵌网页&#34;&gt;pdf.js内嵌网页&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pdfiframe&amp;#34;&lt;/span&gt; 
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/pdf/web/viewer.html?file=https://drive.liulp.club/file/{{.Get 0 }}.pdf&amp;#34;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;#34;&lt;/span&gt; 
     &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
-src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f%2f7186967f6b500f7a6e9aca3a695f23b6%2fTerence_Tao_Analysis_I.pdf&#34; 
+src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://drive.liulp.club/file/Terence_Tao_Analysis_I.pdf&#34; 
 &gt;&lt;/iframe&gt;
 
 
