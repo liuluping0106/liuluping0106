@@ -251,25 +251,30 @@ function getViewerConfiguration() {
   };
 }
 
-window.webViewerLoad=function webViewerLoad(fileUrl) {//调整了此行
+function webViewerLoad() {
   var config = getViewerConfiguration();
   window.PDFViewerApplication = pdfjsWebApp.PDFViewerApplication;
   window.PDFViewerApplicationOptions = pdfjsWebAppOptions.AppOptions;
-  var event = document.createEvent('CustomEvent');
-  event.initCustomEvent('webviewerloaded', true, true, {});
-  document.dispatchEvent(event);
-  //调整了if 语句
-  if(fileUrl){
-    config.defaultUrl=fileUrl;
+  var event = document.createEvent("CustomEvent");
+  event.initCustomEvent("webviewerloaded", true, true, {
+    source: window
+  });
+
+  try {
+    parent.document.dispatchEvent(event);
+  } catch (ex) {
+    console.error("webviewerloaded: ".concat(ex));
+    document.dispatchEvent(event);
   }
+
   pdfjsWebApp.PDFViewerApplication.run(config);
 }
 
-// if (document.readyState === "interactive" || document.readyState === "complete") {
-//   webViewerLoad();
-// } else {
-//   document.addEventListener("DOMContentLoaded", webViewerLoad, true);
-// }
+if (document.readyState === "interactive" || document.readyState === "complete") {
+  webViewerLoad();
+} else {
+  document.addEventListener("DOMContentLoaded", webViewerLoad, true);
+}
 
 /***/ }),
 /* 1 */
@@ -818,13 +823,8 @@ var PDFViewerApplication = {
       }, _callee5);
     }))();
   },
-  run(config) {
-    //添加if语句
-    if(config.defaultUrl){
-      _app_options.AppOptions.set('defaultUrl',config.defaultUrl)
-
-   }    
-   this.initialize(config).then(webViewerInitialized);
+  run: function run(config) {
+    this.initialize(config).then(webViewerInitialized);
   },
 
   get initialized() {
