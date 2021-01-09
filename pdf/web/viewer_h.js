@@ -2192,7 +2192,7 @@ var validateFileURL;
       throw ex;
     }
   };
-}
+
 
 function loadFakeWorker() {
   return _loadFakeWorker.apply(this, arguments);
