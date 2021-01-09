@@ -1337,27 +1337,27 @@ html[dir="rtl"] .thumbnail {
   padding: 7px;
 }
 
-a:focus > .thumbnail > .thumbnailSelectionRing > .thumbnailImage,
+/* a:focus > .thumbnail > .thumbnailSelectionRing > .thumbnailImage,
 .thumbnail:hover > .thumbnailSelectionRing > .thumbnailImage {
   opacity: 0.9;
-}
+} */
 
-a:focus > .thumbnail > .thumbnailSelectionRing,
+/* a:focus > .thumbnail > .thumbnailSelectionRing,
 .thumbnail:hover > .thumbnailSelectionRing {
   background-color: var(--sidebaritem-bg-color);
   background-clip: padding-box;
   color: rgba(255, 255, 255, 0.9);
-}
+} */
 
-.thumbnail.selected > .thumbnailSelectionRing > .thumbnailImage {
+/* .thumbnail.selected > .thumbnailSelectionRing > .thumbnailImage {
   opacity: 1;
-}
+} */
 
-.thumbnail.selected > .thumbnailSelectionRing {
+/* .thumbnail.selected > .thumbnailSelectionRing {
   background-color: var(--sidebaritem-bg-color);
   background-clip: padding-box;
   color: rgba(255, 255, 255, 1);
-}
+} */
 
 #outlineView,
 #attachmentsView,
@@ -1975,10 +1975,10 @@ html[dir='rtl'] .outlineItemToggler::before {
               0 0 1px rgba(255, 255, 255, 0.2) inset,
               0 0 1px rgba(0, 0, 0, 0.2); */
   border-radius: 2px;
-  color: rgba(255,255,255, 0.5);
+  /* color: rgba(255,255,255, 0.5); */
 }
 
-.outlineItem.selected {
+/* .outlineItem.selected {
   background-color: rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
   background-clip: padding-box;
@@ -1986,7 +1986,7 @@ html[dir='rtl'] .outlineItemToggler::before {
               0 0 1px rgba(255, 255, 255, 0.1) inset,
               0 0 1px rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 1);
-}
+} */
 
 .outlineItemToggler::before {
   transform: scale(0.5);
