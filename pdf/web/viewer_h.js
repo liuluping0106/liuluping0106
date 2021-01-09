@@ -14597,7 +14597,7 @@ function getDefaultPreferences() {
       "textLayerMode": 1,
       "useOnlyCssZoom": false,
       "viewOnLoad": 0,
-      "disableAutoFetch": false,
+      "disableAutoFetch": true,
       "disableFontFace": false,
       "disableRange": false,
       "disableStream": false
