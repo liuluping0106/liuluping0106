@@ -1887,8 +1887,7 @@ html[dir='rtl'] .outlineItem > .outlineItems {
   margin-right: 20px;
 }
 
-.outlineItem > a,
-.attachmentsItem > button {
+.outlineItem > a{
   text-decoration: none;
   display: inline-block;
   min-width: 95%;
