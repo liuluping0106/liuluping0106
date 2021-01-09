@@ -2168,30 +2168,30 @@ var validateFileURL;
       return;
     }
   };
-  //   try {
-  //     var viewerOrigin = new URL(window.location.href).origin || "null";
+    try {
+      var viewerOrigin = new URL(window.location.href).origin || "null";
 
-  //     if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
-  //       return;
-  //     }
+      if (HOSTED_VIEWER_ORIGINS.includes(viewerOrigin)) {
+        return;
+      }
 
-  //     var _URL = new URL(file, window.location.href),
-  //         origin = _URL.origin,
-  //         protocol = _URL.protocol;
+      var _URL = new URL(file, window.location.href),
+          origin = _URL.origin,
+          protocol = _URL.protocol;
 
   //     if (origin !== viewerOrigin && protocol !== "blob:") {
   //       throw new Error("file origin does not match viewer's");
   //     }
-  //   } catch (ex) {
-  //     var message = ex && ex.message;
-  //     PDFViewerApplication.l10n.get("loading_error", null, "An error occurred while loading the PDF.").then(function (loadingErrorMessage) {
-  //       PDFViewerApplication.error(loadingErrorMessage, {
-  //         message: message
-  //       });
-  //     });
-  //     throw ex;
-  //   }
-  // };
+    } catch (ex) {
+      var message = ex && ex.message;
+      PDFViewerApplication.l10n.get("loading_error", null, "An error occurred while loading the PDF.").then(function (loadingErrorMessage) {
+        PDFViewerApplication.error(loadingErrorMessage, {
+          message: message
+        });
+      });
+      throw ex;
+    }
+  };
 }
 
 function loadFakeWorker() {
