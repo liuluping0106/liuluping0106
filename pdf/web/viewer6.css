@@ -1349,15 +1349,15 @@ html[dir="rtl"] .thumbnail {
   color: rgba(255, 255, 255, 0.9);
 } */
 
-/* .thumbnail.selected > .thumbnailSelectionRing > .thumbnailImage {
+.thumbnail > .thumbnailSelectionRing > .thumbnailImage {
   opacity: 1;
-} */
+}
 
-/* .thumbnail.selected > .thumbnailSelectionRing {
+.thumbnail > .thumbnailSelectionRing {
   background-color: var(--sidebaritem-bg-color);
   background-clip: padding-box;
   color: rgba(255, 255, 255, 1);
-} */
+}
 
 #outlineView,
 #attachmentsView,
