@@ -1897,7 +1897,7 @@ html[dir='rtl'] .outlineItem > .outlineItems {
   height: auto;
   margin-bottom: 1px;
   border-radius: 2px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 13px;
   line-height: 15px;
   -webkit-user-select: none;
@@ -2004,5 +2004,4 @@ html[dir='ltr'] .outlineItemToggler::before {
 }
 html[dir='rtl'] .outlineItemToggler::before {
   left: 0;
-}
 }
