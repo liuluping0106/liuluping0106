@@ -1617,12 +1617,12 @@ height=&#39;600px&#39;&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;div style=&amp;quot;position: relative; padding: 32% 45%;&amp;quot;&amp;gt;
-    &amp;lt;iframe style=&amp;quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&amp;quot; 
-    src=&amp;quot;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&amp;amp;as_wide=1&amp;amp;high_quality=1&amp;amp;danmaku=1&amp;quot; 
-    scrolling=&amp;quot;no&amp;quot; frameborder=&amp;quot;no&amp;quot; framespacing=&amp;quot;0&amp;quot; allowfullscreen=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
-&amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;网盘视频&#34;&gt;网盘视频&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;position: relative; padding: 32% 45%;&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&amp;#34;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&amp;amp;as_wide=1&amp;amp;high_quality=1&amp;amp;danmaku=1&amp;#34;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;scrolling&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;no&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;frameborder&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;no&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;framespacing&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allowfullscreen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;div&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;网盘视频&#34;&gt;网盘视频&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;标签支持网盘视频和字幕&lt;/li&gt;
 &lt;li&gt;腾讯云开启CORS&lt;/li&gt;
@@ -1640,34 +1640,34 @@ height=&#39;600px&#39;&gt;
    
 &lt;/video&gt;&lt;/p&gt;
 &lt;h3 id=&#34;代码-1&#34;&gt;代码&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;video
-   class=&amp;quot;video-js vjs-big-play-centered vjs-fluid&amp;quot;
-   controls
-   preload=&amp;quot;auto&amp;quot;
-   poster=&amp;quot;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/UwOm5D.jpg&amp;quot;
-   data-setup=&amp;quot;{}&amp;quot; &amp;gt;
-   &amp;lt;source src={{.Get 0 }} type=&amp;quot;video/mp4&amp;quot; /&amp;gt;
-   {{ if .Get 1 }}&amp;lt;track src= {{.Get 1}} srclang=&amp;quot;By Mydrive&amp;quot;  kind=&amp;quot;subtitles&amp;quot; default&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;video&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;video-js vjs-big-play-centered vjs-fluid&amp;#34;&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;controls&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;preload&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;auto&amp;#34;&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;poster&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/UwOm5D.jpg&amp;#34;&lt;/span&gt;
+   &lt;span style=&#34;color:#a6e22e&#34;&gt;data-setup&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{}&amp;#34;&lt;/span&gt; &amp;gt;
+   &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;source&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{{.Get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;video/mp4&amp;#34;&lt;/span&gt; /&amp;gt;
+   {{ if .Get 1 }}&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;track&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;{{.Get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;srclang&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;By Mydrive&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;kind&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;subtitles&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt;&amp;gt;
     {{ else }}{{end}}
-&amp;lt;/video&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;video&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
 &lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
 src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
 &gt;&lt;/iframe&gt;
 
 
 &lt;h3 id=&#34;代码-2&#34;&gt;代码&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;pdfiframe&amp;quot; 
-    src=&amp;quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;quot; 
-    width=&amp;quot;100%&amp;quot; height=&amp;quot;100%&amp;quot;&amp;gt;
-&amp;lt;/iframe&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;问卷效果&#34;&gt;问卷效果&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pdfiframe&amp;#34;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;#34;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;问卷效果&#34;&gt;问卷效果&lt;/h2&gt;
 &lt;script type=&#39;text/javascript&#39; src=&#39;https://www.wjx.cn/handler/jqemed.ashx?activity=84948988&amp;width=700&amp;source=iframe&#39;&gt;&lt;/script&gt;
 &lt;h3 id=&#34;代码-3&#34;&gt;代码&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&#39;text/javascript&#39; 
-    src=&#39;https://www.wjx.cn/handler/jqemed.ashx?activity={{.Get 0 }}&amp;amp;width=700&amp;amp;source=iframe&#39;&amp;gt;
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;text/javascript&amp;#39;&lt;/span&gt; 
+    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://www.wjx.cn/handler/jqemed.ashx?activity={{.Get 0 }}&amp;amp;width=700&amp;amp;source=iframe&amp;#39;&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
   <pubDate>Sat, 11 Jul 2020 08:44:41 +0800</pubDate>
   
   <guid>https://www.liulp.club/2020/07/hugo/</guid>
