@@ -29,7 +29,7 @@
     <meta property="article:published_time" content="2020-08-18T19:17:28">
   
   
-    <meta property="article:modified_time" content="2020-12-12T21:02:08">
+    <meta property="article:modified_time" content="2021-01-09T15:03:40">
   
   
   
@@ -282,64 +282,64 @@
 </ul>
 <h2 id="实现过程">实现过程</h2>
 <h3 id="服务器端代码">服务器端代码：</h3>
-<pre><code>#!/bin/bash
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+GID<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>;
+FileNum<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$2<span style="color:#e6db74">&#34;</span>;
+File<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$3<span style="color:#e6db74">&#34;</span>;
+MinSize<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5&#34;</span>  <span style="color:#75715e">#限制最低上传大小，默认5k</span>
+MaxSize<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;15728640&#34;</span>;
+Thread<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;5&#34;</span>;  <span style="color:#75715e">#默认3线程，自行修改，服务器配置不好的话，不建议太多</span>
+Block<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;15&#34;</span>;  <span style="color:#75715e">#默认分块20m，自行修改</span>
+RemoteDIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cloud&#34;</span>;  <span style="color:#75715e">#上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&#34;&#34;里面请填成MOERATS</span>
+LocalDIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/caddy/www/aria2/Download&#34;</span>;  <span style="color:#75715e">#Aria2下载目录，记得最后面加上/</span>
+Uploader<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/usr/local/bin/OneDriveUploader&#34;</span>;  <span style="color:#75715e">#上传的程序完整路径，默认为本文安装的目录</span>
+Config<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/root/auth.json&#34;</span>;  <span style="color:#75715e">#初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径</span>
 
-GID=&quot;$1&quot;;
-FileNum=&quot;$2&quot;;
-File=&quot;$3&quot;;
-MinSize=&quot;5&quot;  #限制最低上传大小，默认5k
-MaxSize=&quot;15728640&quot;;
-Thread=&quot;5&quot;;  #默认3线程，自行修改，服务器配置不好的话，不建议太多
-Block=&quot;15&quot;;  #默认分块20m，自行修改
-RemoteDIR=&quot;cloud&quot;;  #上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&quot;&quot;里面请填成MOERATS
-LocalDIR=&quot;/usr/local/caddy/www/aria2/Download&quot;;  #Aria2下载目录，记得最后面加上/
-Uploader=&quot;/usr/local/bin/OneDriveUploader&quot;;  #上传的程序完整路径，默认为本文安装的目录
-Config=&quot;/root/auth.json&quot;;  #初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径
 
-
-# 调用ffmpeg
+<span style="color:#75715e"># 调用ffmpeg</span>
 cd /usr/local/caddy/www/aria2/Download
-for files in `ls`
-do
-    # 截取文件名的前两个字符
-    object=${files};
-    fname=${files%.*};
-    # 截取文件的后四个字符
-    bname=${files:0-3};
-    # 拼接成文件名
-    if [ $bname = mp4 ];then
+<span style="color:#66d9ef">for</span> files in <span style="color:#e6db74">`</span>ls<span style="color:#e6db74">`</span>
+<span style="color:#66d9ef">do</span>
+    <span style="color:#75715e"># 截取文件名的前两个字符</span>
+    object<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>files<span style="color:#e6db74">}</span>;
+    fname<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>files%.*<span style="color:#e6db74">}</span>;
+    <span style="color:#75715e"># 截取文件的后四个字符</span>
+    bname<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>files:0-3<span style="color:#e6db74">}</span>;
+    <span style="color:#75715e"># 拼接成文件名</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $bname <span style="color:#f92672">=</span> mp4 <span style="color:#f92672">]</span>;<span style="color:#66d9ef">then</span>
         mkdir $fname;
         ffmpeg -i $object -c copy -bsf:v h264_mp4toannexb cs.ts
-        ffmpeg -i cs.ts -c copy -map 0 -f segment -segment_list ‘$fname/cs.m3u8’ -segment_time 20 ‘$fname/cs-%03d.ts’
+        ffmpeg -i cs.ts -c copy -map <span style="color:#ae81ff">0</span> -f segment -segment_list ‘$fname/cs.m3u8’ -segment_time <span style="color:#ae81ff">20</span> ‘$fname/cs-%03d.ts’
         rm cs.ts
-    fi
-done
+    <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
 
-if [[ -z $(echo &quot;$FileNum&quot; |grep -o '[0-9]*' |head -n1) ]]; then FileNum='0'; fi
-if [[ &quot;$FileNum&quot; -le '0' ]]; then exit 0; fi
-if [[ &quot;$#&quot; != '3' ]]; then exit 0; fi
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;</span>$FileNum<span style="color:#e6db74">&#34;</span> |grep -o <span style="color:#e6db74">&#39;[0-9]*&#39;</span> |head -n1<span style="color:#66d9ef">)</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> FileNum<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;0&#39;</span>; <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$FileNum<span style="color:#e6db74">&#34;</span> -le <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> exit 0; <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$#<span style="color:#e6db74">&#34;</span> !<span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;3&#39;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> exit 0; <span style="color:#66d9ef">fi</span>
 
-function LoadFile(){
-  if [[ ! -e &quot;${Uploader}&quot; ]]; then return; fi
-  IFS_BAK=$IFS
-  IFS=$'\n'
-  tmpFile=&quot;$(echo &quot;${File/#$LocalDIR}&quot; |cut -f1 -d'/')&quot;
-  FileLoad=&quot;${LocalDIR}${tmpFile}&quot;
-  if [[ ! -e &quot;${FileLoad}&quot; ]]; then return; fi
-  ItemSize=$(du -s &quot;${FileLoad}&quot; |cut -f1 |grep -o '[0-9]*' |head -n1)
-  if [[ -z &quot;$ItemSize&quot; ]]; then return; fi
-  if [[ &quot;$ItemSize&quot; -ge &quot;$MaxSize&quot; ]]; then
-    echo -ne &quot;\033[33m${FileLoad} \033[0mtoo large to spik.\n&quot;;
-    return;
-  fi
-  ${Uploader} -c &quot;${Config}&quot; -t &quot;${Thread}&quot; -b &quot;${Block}&quot; -s &quot;${FileLoad}&quot; -r &quot;${RemoteDIR}&quot; -skip
-  if [[ $? == '0' ]]; then
-    rm -rf &quot;${FileLoad}&quot;;
-  fi
-  IFS=$IFS_BAK
-}
+<span style="color:#66d9ef">function</span> LoadFile<span style="color:#f92672">(){</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> ! -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Uploader<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">return</span>; <span style="color:#66d9ef">fi</span>
+  IFS_BAK<span style="color:#f92672">=</span>$IFS
+  IFS<span style="color:#f92672">=</span><span style="color:#e6db74">$&#39;\n&#39;</span>
+  tmpFile<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>File/#$LocalDIR<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> |cut -f1 -d<span style="color:#e6db74">&#39;/&#39;</span><span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+  FileLoad<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>LocalDIR<span style="color:#e6db74">}${</span>tmpFile<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> ! -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>FileLoad<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">return</span>; <span style="color:#66d9ef">fi</span>
+  ItemSize<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>du -s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>FileLoad<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> |cut -f1 |grep -o <span style="color:#e6db74">&#39;[0-9]*&#39;</span> |head -n1<span style="color:#66d9ef">)</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -z <span style="color:#e6db74">&#34;</span>$ItemSize<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span> <span style="color:#66d9ef">return</span>; <span style="color:#66d9ef">fi</span>
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> <span style="color:#e6db74">&#34;</span>$ItemSize<span style="color:#e6db74">&#34;</span> -ge <span style="color:#e6db74">&#34;</span>$MaxSize<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    echo -ne <span style="color:#e6db74">&#34;\033[33m</span><span style="color:#e6db74">${</span>FileLoad<span style="color:#e6db74">}</span><span style="color:#e6db74"> \033[0mtoo large to spik.\n&#34;</span>;
+    <span style="color:#66d9ef">return</span>;
+  <span style="color:#66d9ef">fi</span>
+  <span style="color:#e6db74">${</span>Uploader<span style="color:#e6db74">}</span> -c <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Config<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -t <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Thread<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -b <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>Block<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -s <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>FileLoad<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -r <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>RemoteDIR<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> -skip
+  <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> $? <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;0&#39;</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+    rm -rf <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>FileLoad<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>;
+  <span style="color:#66d9ef">fi</span>
+  IFS<span style="color:#f92672">=</span>$IFS_BAK
+<span style="color:#f92672">}</span>
 LoadFile;
-</code></pre><h3 id="前端代码">前端代码</h3>
+</code></pre></div><h3 id="前端代码">前端代码</h3>
 <pre><code>&lt;iframe id=&quot;m3u8iframe&quot;  src=&quot;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/{{.Get 0 }}/cs.m3u8&quot;
     width=&quot;100%&quot; height=&quot;600&quot; allowfullscreen=&quot;true&quot; frameborder=&quot;0&quot; scrolling='no'&gt;
 &lt;/iframe&gt;

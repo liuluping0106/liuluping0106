@@ -15,64 +15,64 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;实现过程&#34;&gt;实现过程&lt;/h2&gt;
 &lt;h3 id=&#34;服务器端代码&#34;&gt;服务器端代码：&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;#!/bin/bash
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+GID&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$1&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
+FileNum&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$2&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
+File&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$3&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
+MinSize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#限制最低上传大小，默认5k&lt;/span&gt;
+MaxSize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;15728640&amp;#34;&lt;/span&gt;;
+Thread&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;5&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#默认3线程，自行修改，服务器配置不好的话，不建议太多&lt;/span&gt;
+Block&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;15&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#默认分块20m，自行修改&lt;/span&gt;
+RemoteDIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;cloud&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&amp;#34;&amp;#34;里面请填成MOERATS&lt;/span&gt;
+LocalDIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/local/caddy/www/aria2/Download&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#Aria2下载目录，记得最后面加上/&lt;/span&gt;
+Uploader&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/local/bin/OneDriveUploader&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#上传的程序完整路径，默认为本文安装的目录&lt;/span&gt;
+Config&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/root/auth.json&amp;#34;&lt;/span&gt;;  &lt;span style=&#34;color:#75715e&#34;&gt;#初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径&lt;/span&gt;
 
-GID=&amp;quot;$1&amp;quot;;
-FileNum=&amp;quot;$2&amp;quot;;
-File=&amp;quot;$3&amp;quot;;
-MinSize=&amp;quot;5&amp;quot;  #限制最低上传大小，默认5k
-MaxSize=&amp;quot;15728640&amp;quot;;
-Thread=&amp;quot;5&amp;quot;;  #默认3线程，自行修改，服务器配置不好的话，不建议太多
-Block=&amp;quot;15&amp;quot;;  #默认分块20m，自行修改
-RemoteDIR=&amp;quot;cloud&amp;quot;;  #上传到Onedrive的路径，默认为根目录，如果要上传到MOERATS目录，&amp;quot;&amp;quot;里面请填成MOERATS
-LocalDIR=&amp;quot;/usr/local/caddy/www/aria2/Download&amp;quot;;  #Aria2下载目录，记得最后面加上/
-Uploader=&amp;quot;/usr/local/bin/OneDriveUploader&amp;quot;;  #上传的程序完整路径，默认为本文安装的目录
-Config=&amp;quot;/root/auth.json&amp;quot;;  #初始化生成的配置auth.json绝对路径，参考第3步骤生成的路径
 
-
-# 调用ffmpeg
+&lt;span style=&#34;color:#75715e&#34;&gt;# 调用ffmpeg&lt;/span&gt;
 cd /usr/local/caddy/www/aria2/Download
-for files in `ls`
-do
-    # 截取文件名的前两个字符
-    object=${files};
-    fname=${files%.*};
-    # 截取文件的后四个字符
-    bname=${files:0-3};
-    # 拼接成文件名
-    if [ $bname = mp4 ];then
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; files in &lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;ls&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;do&lt;/span&gt;
+    &lt;span style=&#34;color:#75715e&#34;&gt;# 截取文件名的前两个字符&lt;/span&gt;
+    object&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;files&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;;
+    fname&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;files%.*&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;;
+    &lt;span style=&#34;color:#75715e&#34;&gt;# 截取文件的后四个字符&lt;/span&gt;
+    bname&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;files:0-3&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;;
+    &lt;span style=&#34;color:#75715e&#34;&gt;# 拼接成文件名&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt; $bname &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; mp4 &lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;;&lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
         mkdir $fname;
         ffmpeg -i $object -c copy -bsf:v h264_mp4toannexb cs.ts
-        ffmpeg -i cs.ts -c copy -map 0 -f segment -segment_list ‘$fname/cs.m3u8’ -segment_time 20 ‘$fname/cs-%03d.ts’
+        ffmpeg -i cs.ts -c copy -map &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; -f segment -segment_list ‘$fname/cs.m3u8’ -segment_time &lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt; ‘$fname/cs-%03d.ts’
         rm cs.ts
-    fi
-done
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;done&lt;/span&gt;
 
-if [[ -z $(echo &amp;quot;$FileNum&amp;quot; |grep -o &#39;[0-9]*&#39; |head -n1) ]]; then FileNum=&#39;0&#39;; fi
-if [[ &amp;quot;$FileNum&amp;quot; -le &#39;0&#39; ]]; then exit 0; fi
-if [[ &amp;quot;$#&amp;quot; != &#39;3&#39; ]]; then exit 0; fi
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; -z &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$FileNum&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; |grep -o &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;[0-9]*&amp;#39;&lt;/span&gt; |head -n1&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; FileNum&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$FileNum&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -le &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; exit 0; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$#&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; !&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;3&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; exit 0; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
 
-function LoadFile(){
-  if [[ ! -e &amp;quot;${Uploader}&amp;quot; ]]; then return; fi
-  IFS_BAK=$IFS
-  IFS=$&#39;\n&#39;
-  tmpFile=&amp;quot;$(echo &amp;quot;${File/#$LocalDIR}&amp;quot; |cut -f1 -d&#39;/&#39;)&amp;quot;
-  FileLoad=&amp;quot;${LocalDIR}${tmpFile}&amp;quot;
-  if [[ ! -e &amp;quot;${FileLoad}&amp;quot; ]]; then return; fi
-  ItemSize=$(du -s &amp;quot;${FileLoad}&amp;quot; |cut -f1 |grep -o &#39;[0-9]*&#39; |head -n1)
-  if [[ -z &amp;quot;$ItemSize&amp;quot; ]]; then return; fi
-  if [[ &amp;quot;$ItemSize&amp;quot; -ge &amp;quot;$MaxSize&amp;quot; ]]; then
-    echo -ne &amp;quot;\033[33m${FileLoad} \033[0mtoo large to spik.\n&amp;quot;;
-    return;
-  fi
-  ${Uploader} -c &amp;quot;${Config}&amp;quot; -t &amp;quot;${Thread}&amp;quot; -b &amp;quot;${Block}&amp;quot; -s &amp;quot;${FileLoad}&amp;quot; -r &amp;quot;${RemoteDIR}&amp;quot; -skip
-  if [[ $? == &#39;0&#39; ]]; then
-    rm -rf &amp;quot;${FileLoad}&amp;quot;;
-  fi
-  IFS=$IFS_BAK
-}
+&lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; LoadFile&lt;span style=&#34;color:#f92672&#34;&gt;(){&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; ! -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;Uploader&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  IFS_BAK&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$IFS
+  IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$&amp;#39;\n&amp;#39;&lt;/span&gt;
+  tmpFile&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;File/#$LocalDIR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; |cut -f1 -d&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+  FileLoad&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;LocalDIR&lt;span style=&#34;color:#e6db74&#34;&gt;}${&lt;/span&gt;tmpFile&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; ! -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;FileLoad&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  ItemSize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;du -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;FileLoad&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; |cut -f1 |grep -o &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;[0-9]*&amp;#39;&lt;/span&gt; |head -n1&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; -z &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$ItemSize&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$ItemSize&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -ge &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$MaxSize&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    echo -ne &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\033[33m&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;FileLoad&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; \033[0mtoo large to spik.\n&amp;#34;&lt;/span&gt;;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  &lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;Uploader&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt; -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;Config&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -t &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;Thread&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -b &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;Block&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;FileLoad&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -r &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;RemoteDIR&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; -skip
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;[[&lt;/span&gt; $? &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;]]&lt;/span&gt;; &lt;span style=&#34;color:#66d9ef&#34;&gt;then&lt;/span&gt;
+    rm -rf &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;FileLoad&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
+  &lt;span style=&#34;color:#66d9ef&#34;&gt;fi&lt;/span&gt;
+  IFS&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;$IFS_BAK
+&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 LoadFile;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;前端代码&#34;&gt;前端代码&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;前端代码&#34;&gt;前端代码&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;&amp;lt;iframe id=&amp;quot;m3u8iframe&amp;quot;  src=&amp;quot;https://www.liulp.club/m3u8/index.html?url=https://drive.liulp.club/Download/{{.Get 0 }}/cs.m3u8&amp;quot;
     width=&amp;quot;100%&amp;quot; height=&amp;quot;600&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; frameborder=&amp;quot;0&amp;quot; scrolling=&#39;no&#39;&amp;gt;
 &amp;lt;/iframe&amp;gt;
