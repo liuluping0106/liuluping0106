@@ -1897,7 +1897,7 @@ html[dir='rtl'] .outlineItem > .outlineItems {
   height: auto;
   margin-bottom: 1px;
   border-radius: 2px;
-  color: rgba(0, 0, 0, 0.8);
+  /* color: rgba(0, 0, 0, 0.8); */
   font-size: 13px;
   line-height: 15px;
   -webkit-user-select: none;
@@ -1967,7 +1967,7 @@ html[dir='rtl'] .outlineItemToggler::before {
 .outlineItemToggler:hover + a,
 .outlineItemToggler:hover ~ .outlineItems,
 .outlineItem > a:hover,
-.attachmentsItem > button:hover {
+/* .attachmentsItem > button:hover {
   background-color: rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
   background-clip: padding-box;
@@ -1986,7 +1986,7 @@ html[dir='rtl'] .outlineItemToggler::before {
               0 0 1px rgba(255, 255, 255, 0.1) inset,
               0 0 1px rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 1);
-}
+} */
 
 .outlineItemToggler::before {
   transform: scale(0.5);
