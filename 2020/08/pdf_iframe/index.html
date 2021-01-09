@@ -29,7 +29,7 @@
     <meta property="article:published_time" content="2020-08-02T14:16:19">
   
   
-    <meta property="article:modified_time" content="2020-12-12T21:04:40">
+    <meta property="article:modified_time" content="2021-01-09T15:11:06">
   
   
   
@@ -276,41 +276,41 @@
               <p>网站解锁iframe方案</p>
 <p>iframe，简直是扩展的first choice，各种GitHub上的轮子用起来不要太舒服，配合shortcode更佳欧！</p>
 <h2 id="pdfjs内嵌网页">pdf.js内嵌网页</h2>
-<pre><code>&lt;iframe id=&quot;pdfiframe&quot; 
-    src=&quot;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&quot; 
-    width=&quot;100%&quot; height=&quot;100%&quot;&gt;
-&lt;/iframe&gt;
-</code></pre><iframe id="pdfiframe" width="100%" height="100%" frameborder="0"
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pdfiframe&#34;</span> 
+    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&#34;</span> 
+    <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span>&gt;
+&lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div><iframe id="pdfiframe" width="100%" height="100%" frameborder="0"
 src="https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf" 
 ></iframe>
 
 
 <h2 id="epubjs内嵌网页">epub.js内嵌网页</h2>
-<pre><code>&lt;iframe id=&quot;epubiframe&quot; allowfullscreen=&quot;true&quot; 
-    src=&quot;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&quot;
-    width=&quot;100%&quot; height=&quot;100%&quot;&gt;
-&lt;/iframe&gt;
-</code></pre><iframe id="epubiframe" width="100%" height="600" allowfullscreen="true" frameborder="0"
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;epubiframe&#34;</span> <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span> 
+    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&#34;</span>
+    <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span>&gt;
+&lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div><iframe id="epubiframe" width="100%" height="600" allowfullscreen="true" frameborder="0"
 src="https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/document/8392675_%e8%ae%ba%e7%be%8e%e5%9b%bd%e7%9a%84%e6%b0%91%e4%b8%bb.epub"
 ></iframe>
 
 <h2 id="md5密文内嵌">MD5密文内嵌</h2>
-<pre><code>&lt;iframe id=&quot;md5iframe&quot;
-    src=&quot;https://www.liulp.club/md5/decode.html?txt={{.Get 0 }}&quot;
-    width=&quot;100%&quot; height=&quot;300&quot; frameborder=&quot;0&quot;&gt;
-&lt;/iframe&gt;
-</code></pre><iframe id="md5iframe"
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;md5iframe&#34;</span>
+    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.liulp.club/md5/decode.html?txt={{.Get 0 }}&#34;</span>
+    <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;300&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>&gt;
+&lt;/<span style="color:#f92672">iframe</span>&gt;
+</code></pre></div><iframe id="md5iframe"
     src="https://www.liulp.club/md5/decode.html?txt=prose_a"
     width="100%" height="300" frameborder="0" >
 </iframe>
 <h2 id="pdfobject方法">pdfobject方法</h2>
 <p>此方法无法适配手机浏览器</p>
-<pre><code>&lt;object id= &quot;pdfcontainer&quot; data='https://pdfobject.com/pdf/sample-3pp.pdf' 
-    type='application/pdf' 
-    width='100%' 
-    height='600px'&gt;
-&lt;/object&gt;
-</code></pre><p><object id= "pdfcontainer" data='https://pdfobject.com/pdf/sample-3pp.pdf' 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">object</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;pdfcontainer&#34;</span> <span style="color:#a6e22e">data</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://pdfobject.com/pdf/sample-3pp.pdf&#39;</span> 
+    <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;application/pdf&#39;</span> 
+    <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;100%&#39;</span> 
+    <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;600px&#39;</span>&gt;
+&lt;/<span style="color:#f92672">object</span>&gt;
+</code></pre></div><p><object id= "pdfcontainer" data='https://pdfobject.com/pdf/sample-3pp.pdf' 
 type='application/pdf' 
 type='application/pdf' 
 width='100%' 
