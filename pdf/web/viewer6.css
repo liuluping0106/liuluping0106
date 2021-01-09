@@ -1349,11 +1349,11 @@ html[dir="rtl"] .thumbnail {
   color: rgba(255, 255, 255, 0.9);
 } */
 
-.thumbnail > .thumbnailSelectionRing > .thumbnailImage {
+.thumbnail.selected > .thumbnailSelectionRing > .thumbnailImage {
   opacity: 1;
 }
 
-.thumbnail > .thumbnailSelectionRing {
+.thumbnail.selected > .thumbnailSelectionRing {
   background-color: var(--sidebaritem-bg-color);
   background-clip: padding-box;
   color: rgba(255, 255, 255, 1);
