@@ -74,7 +74,7 @@ See https://github.com/adobe-type-tools/cmap-resources
             type: "get",
             async: false,
             mimeType: 'text/plain; charset=x-user-defined',
-            url: "/api/g_pdf?pdfurl=" + url, //请求服务器数据 获取pdf数据流
+            url: "/pdf/web/viewer.html?pdfurl=" + url, //请求服务器数据 获取pdf数据流
             success: function (data) {
                 var rawLength = data.length;
                 //转换成pdf.js能直接解析的Uint8Array类型,见pdf.js-4068    
