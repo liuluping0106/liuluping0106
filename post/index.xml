@@ -44,7 +44,7 @@ location / {
     rewrite ^(.*)$ /index.php/?s=$1;
   }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;epubjs调整&#34;&gt;epubjs调整&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;epubjs调整&#34;&gt;Epubjs调整&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;epubjs&lt;/code&gt;支持以文件名为结尾的网址，为了和&lt;code&gt;TeambitionShare&lt;/code&gt;生成的目录相容。先网页默认添加&lt;code&gt;index.epub&lt;/code&gt;的尾缀，然后在&lt;code&gt;javascript&lt;/code&gt;中再删除。简单得实现了兼容。我真是一个小天才，哈哈。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// epub.js
 &lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;xhr&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;onreadystatechange&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;handler&lt;/span&gt;;
