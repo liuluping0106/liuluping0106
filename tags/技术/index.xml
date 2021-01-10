@@ -2,6 +2,15 @@
 <channel>
 
 <item>
+  <title>网站跨域设计</title>
+  <link>https://www.liulp.club/2021/01/cors/</link>
+    <description></description>
+  <pubDate>Sun, 10 Jan 2021 23:02:38 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2021/01/cors/</guid>
+</item>
+
+<item>
   <title>远程下载视频成m3u8形式</title>
   <link>https://www.liulp.club/2020/08/m3u8/</link>
     <description>&lt;p&gt;成功使用远程下载自动切片m3u8，且实现在线播放。&lt;/p&gt;
