@@ -6,7 +6,7 @@
   <link>https://www.liulp.club/2021/01/cors/</link>
     <description>&lt;p&gt;花了小两天时间彻底实现了一下&lt;code&gt;teambition&lt;/code&gt;直链的跨域问题，值得写下来纪念一下。&lt;/p&gt;
 &lt;!--toc--&gt;
-&lt;h2 id=&#34;teambition直链&#34;&gt;teambition直链&lt;/h2&gt;
+&lt;h2 id=&#34;teambition&#34;&gt;teambition&lt;/h2&gt;
 &lt;p&gt;目前找到了两个&lt;code&gt;teambition&lt;/code&gt;的直链系统，一个是用&lt;code&gt;Node.js&lt;/code&gt;写的，另一个是用&lt;code&gt;php&lt;/code&gt;写的。&lt;code&gt;Node.js&lt;/code&gt;写的我不会改，就修改了&lt;code&gt;php&lt;/code&gt;版本的，成功实现了自己的想法，哈哈哈，开心~~&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.52pojie.cn/thread-1320716-1-1.html&#34;&gt;teambition直链解析&lt;/a&gt;&lt;/li&gt;
