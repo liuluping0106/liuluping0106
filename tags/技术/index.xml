@@ -198,15 +198,11 @@ LoadFile;
     &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;#34;&lt;/span&gt; 
     &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- &lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
-    src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
-&gt;&lt;/iframe&gt;
-
- --&gt;
-&lt;iframe id=&#34;pdfiframe&#34; 
-    src=&#34;https://teambition.ltest.tk/pdf/web/viewer.html?file=https://teambition.ltest.tk/download/7186967f6b500f7a6e9aca3a695f23b6&#34; 
-    width=&#34;100%&#34; height=&#34;100%&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+    src=&#34;https://teambition.ltest.tk/pdf/web/viewer.html?file=https://teambition.ltest.tk/download/7186967f6b500f7a6e9aca3a695f23b6&#34; &gt;
 &lt;/iframe&gt;
+
+
 &lt;h2 id=&#34;epubjs内嵌网页&#34;&gt;epub.js内嵌网页&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;epubiframe&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;allowfullscreen&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; 
     &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&amp;#34;&lt;/span&gt;
@@ -304,8 +300,8 @@ height=&#39;600px&#39;&gt;
 &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;video&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
 &lt;!-- &lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
-    src=&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/Terence_Tao_Analysis_I.pdf&#34; 
-&gt;&lt;/iframe&gt;
+    src=&#34;https://teambition.ltest.tk/pdf/web/viewer.html?file=https://teambition.ltest.tk/download/Terence_Tao_Analysis_I&#34; &gt;
+&lt;/iframe&gt;
 
  --&gt;
 &lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
