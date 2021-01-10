@@ -341,7 +341,7 @@ LoadFile;
 
  --&gt;
 &lt;iframe id=&#34;pdfiframe&#34; 
-    src=&#34;https://dn-st.teambition.net/teambition/statics/pdfviewer/v1.1.0/index.html?file=https%3A%2F%2Fdata-hz-pds.teambition.net%2F5fedacf0edc4c6b6213340adba030a794b7b2aef%252F5fedacf0d122026159ff4d1facb126ab6ecdb362%3Fx-oss-access-key-id%3DLTAIsE5mAn2F493Q%26x-oss-expires%3D1610282336%26x-oss-signature%3D11pKz%252FyZfd90X9fS0y2SnqBAPNe3Pl3%252BzODeXVFkegM%253D%26x-oss-signature-version%3DOSS2&amp;width=1968&amp;download=&#34; 
+    src=&#34;https://teambition.ltest.tk/pdf/web/viewer.html?file=https://teambition.ltest.tk/download/7186967f6b500f7a6e9aca3a695f23b6&#34; 
     width=&#34;100%&#34; height=&#34;100%&#34;&gt;
 &lt;/iframe&gt;
 &lt;h2 id=&#34;epubjs内嵌网页&#34;&gt;epub.js内嵌网页&lt;/h2&gt;
