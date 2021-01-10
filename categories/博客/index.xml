@@ -16,7 +16,34 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;$cors1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://teambition.ltest.tk/service&amp;#34;&lt;/span&gt;;
 $cors2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;substr&lt;/span&gt;($result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;);
 $result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$cors1$cors2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;nignx目录分流&#34;&gt;Nignx目录分流&lt;/h2&gt;
+&lt;p&gt;本来&lt;code&gt;teambition&lt;/code&gt;解析和反向代理都可以分配一个域名，不过这样还是有跨域的问题。所以我学习重写了nignx的配置文件，使用子目录做分流。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set $flag 1;
+location /service/ {
+  proxy_pass https://data-hz-pds.teambition.net/;
+  proxy_set_header Host data-hz-pds.teambition.net;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_set_header REMOTE-HOST $remote_addr;
+  set $flag 0;
+}
+location /pdf {
+  set $flag 0;
+}
+location /epub {
+  set $flag 0;
+}
+
+if (!-e $request_filename){
+  set $flag &amp;quot;${flag}1&amp;quot;;
+}
+#根目录伪静态
+location / {
+  if ($flag = 11){
+    rewrite ^(.*)$ /index.php/?s=$1;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
   <pubDate>Sun, 10 Jan 2021 23:02:38 +0800</pubDate>
   
   <guid>https://www.liulp.club/2021/01/cors/</guid>
