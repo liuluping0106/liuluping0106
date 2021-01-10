@@ -30,7 +30,7 @@
     <meta property="article:published_time" content="2021-01-10T23:02:38">
   
   
-    <meta property="article:modified_time" content="2021-01-11T00:05:41">
+    <meta property="article:modified_time" content="2021-01-11T00:06:53">
   
   
   
@@ -288,7 +288,7 @@
 <li><a href="https://www.52pojie.cn/thread-1320716-1-1.html">teambition直链解析</a></li>
 <li><a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></li>
 </ul>
-<p>应为直链解析直接解析到teambition的服务器，本意是为了不用走服务器流量。但是在网页调用时会出现跨域的问题，我就修改了链接格式使用了反向代理。</p>
+<p>应为直链解析直接解析到<code>teambition</code>的服务器，本意是为了不用走服务器流量。但是在网页调用时会出现跨域的问题，我就修改了链接格式使用了反向代理。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// index.php
 </span><span style="color:#75715e"></span>$cors1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://teambition.ltest.tk/service&#34;</span>;
 $cors2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">substr</span>($result[<span style="color:#e6db74">&#39;downloadUrl&#39;</span>], <span style="color:#ae81ff">34</span>);
