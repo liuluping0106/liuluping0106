@@ -17,7 +17,7 @@
 $cors2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;substr&lt;/span&gt;($result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;);
 $result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$cors1$cors2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;nignx目录分流&#34;&gt;Nignx目录分流&lt;/h2&gt;
-&lt;p&gt;本来&lt;code&gt;teambition&lt;/code&gt;解析和反向代理都可以分配一个域名，不过这样还是有跨域的问题。所以我学习重写了nignx的配置文件，使用子目录做分流。&lt;/p&gt;
+&lt;p&gt;本来&lt;code&gt;teambition&lt;/code&gt;解析和反向代理都可以分配一个域名，不过这样还是有跨域的问题。所以我学习重写了&lt;code&gt;nignx&lt;/code&gt;的配置文件，使用子目录做分流。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;set $flag 1;
 location /service/ {
   proxy_pass https://data-hz-pds.teambition.net/;
