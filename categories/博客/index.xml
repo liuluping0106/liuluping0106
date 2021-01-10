@@ -354,18 +354,21 @@ src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.ne
 &gt;&lt;/iframe&gt;
  --&gt;
 &lt;iframe id=&#34;epubiframe&#34; allowfullscreen=&#34;true&#34; 
-    src=&#34;https://www.liulp.club/epub/index.html?bookPath=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f/ba6b4609fabb8bf0103e3d2db81def69/8392675_%E8%AE%BA%E7%BE%8E%E5%9B%BD%E7%9A%84%E6%B0%91%E4%B8%BB.epub&#34;
+    src=&#34;https://teambition.ltest.tk/epub/index.html?bookPath=https://teambition.ltest.tk/download/ba6b4609fabb8bf0103e3d2db81def69&#34;
     width=&#34;100%&#34; height=&#34;100%&#34;&gt;
 &lt;/iframe&gt;
-&lt;h2 id=&#34;md5密文内嵌&#34;&gt;MD5密文内嵌&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;md5iframe&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/md5/decode.html?txt={{.Get 0 }}&amp;#34;&lt;/span&gt;
-    &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;300&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;frameborder&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&amp;gt;
-&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe id=&#34;md5iframe&#34;
+&lt;!-- ## MD5密文内嵌
+```html
+&lt;iframe id=&#34;md5iframe&#34;
+    src=&#34;https://www.liulp.club/md5/decode.html?txt={{.Get 0 }}&#34;
+    width=&#34;100%&#34; height=&#34;300&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+```
+
+&lt;iframe id=&#34;md5iframe&#34;
     src=&#34;https://www.liulp.club/md5/decode.html?txt=prose_a&#34;
     width=&#34;100%&#34; height=&#34;300&#34; frameborder=&#34;0&#34; &gt;
-&lt;/iframe&gt;
+&lt;/iframe&gt; --&gt;
 &lt;h2 id=&#34;pdfobject方法&#34;&gt;pdfobject方法&lt;/h2&gt;
 &lt;p&gt;此方法无法适配手机浏览器&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;object&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pdfcontainer&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt; 
