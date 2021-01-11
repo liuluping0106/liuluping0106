@@ -343,8 +343,8 @@ height=&#39;600px&#39;&gt;
    poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp&#34;
    data-setup=&#34;{}&#34;
  &gt;
-   &lt;source src=https://drive.liulp.club/file/5f640c0d9fd954e05219b72f/464844dd63b9224c03b47c36795b9844/video01.mp4 /&gt;
-   
+&lt;source src=&#34;https://teambition.liulp.club/download/464844dd63b9224c03b47c36795b9844&#34; /&gt;
+  
 &lt;/video&gt;&lt;/p&gt;
 &lt;h3 id=&#34;代码-1&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;video&lt;/span&gt;
