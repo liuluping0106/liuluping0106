@@ -54,15 +54,16 @@ $(function() {
         threshold: 100
     })
 });
-var ele = document.getElementById("biiframe");
-if (ele) {
-    var hh = ele.offsetWidth * 0.65;
-    ele.height = hh
+var ele = document.getElementsByClassName("biiframe");
+var i;
+for (i = 0; i < ele.length; i++) {
+    var hh = ele[i].offsetWidth * 0.65;
+    ele[i].height = hh;
 }
-var ele = document.getElementById("pdfiframe");
-if (ele) {
-    var hh = Math.min(window.screen.availHeight * 0.85, ele.offsetWidth * 1.6);
-    ele.height = hh
+var ele = document.getElementsByClassName("pdfiframe");
+for (i = 0; i < ele.length; i++) {
+    var hh = Math.min(window.screen.availHeight * 0.85, ele[i].offsetWidth * 1.6);
+    ele[i].height = hh;
 }
 
 var ele = document.getElementById("dociframe");
@@ -71,10 +72,10 @@ if (ele) {
     ele.height = hh
 }
 
-var ele = document.getElementById("epubiframe");
-if (ele) {
-    var hh = Math.min(window.screen.availHeight * 0.85, ele.offsetWidth * 1.6);
-    ele.height = hh
+var ele = document.getElementsByClassName("epubiframe");
+for (i = 0; i < ele.length; i++) {
+    var hh = Math.min(window.screen.availHeight * 0.85, ele[i].offsetWidth * 1.6);
+    ele[i].height = hh
 }
 var ele = document.getElementById("m3u8iframe");
 if (ele) {
@@ -87,6 +88,15 @@ if (ele) {
     var hh = Math.min(ele.offsetWidth * 0.65, 700);
     ele.height = hh
 }
+var ele = document.getElementsByClassName("md5iframe");
+for (i = 0; i < ele.length; i++) {
+    ele[i].width = Math.min(ele.offsetWidth, 1200);
+    var hh = Math.min(ele.offsetWidth * 9 / 16);
+    ele[i].height = hh;
+}
+
+
+
 function runtime() {
     X = new Date("07/08/2020 8:30:00");
     Y = new Date();

@@ -72,7 +72,7 @@ location / {
 &lt;span style=&#34;color:#a6e22e&#34;&gt;xhr&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;open&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GET&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;效果&#34;&gt;效果&lt;/h2&gt;
 &lt;p&gt;当当当，展示一下效果。当然走的海外的服务器，延迟稍微有点高。&lt;/p&gt;
-&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+&lt;iframe class=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef&#34; &gt;
 &lt;/iframe&gt;</description>
   <pubDate>Sun, 10 Jan 2021 23:02:38 +0800</pubDate>
@@ -277,7 +277,7 @@ LoadFile;
     &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&amp;#34;&lt;/span&gt; 
     &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe class=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef&#34; &gt;
 &lt;/iframe&gt;
 
@@ -287,7 +287,7 @@ LoadFile;
     &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.liulp.club/epub/index.html?bookPath=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.epub&amp;#34;&lt;/span&gt;
     &lt;span style=&#34;color:#a6e22e&#34;&gt;width&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;height&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;100%&amp;#34;&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;iframe&lt;/span&gt;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe id=&#34;epubiframe&#34; width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;iframe class=&#34;epubiframe&#34; width=&#34;100%&#34; height=&#34;600&#34; allowfullscreen=&#34;true&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/epub/reader/?bookPath=https://teambition.liulp.club/download/5fedacf0b3f90e03fd384be68b9612e959513d67.epub&#34;
 &gt;&lt;/iframe&gt;
 
@@ -341,7 +341,7 @@ LoadFile;
 &lt;/ul&gt;
 &lt;h2 id=&#34;视频效果&#34;&gt;视频效果&lt;/h2&gt;
 &lt;div style=&#34;position: relative;&#34;&gt;
-    &lt;iframe id=&#34;biiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
+    &lt;iframe class=&#34;biiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
     src=&#34;//player.bilibili.com/player.html?bvid=BV14z411i78Q&amp;page=1&amp;as_wide=1&amp;high_quality=1&amp;danmaku=0&#34; scrolling=&#34;no&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -358,7 +358,7 @@ LoadFile;
 &lt;li&gt;加载video.js插件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;效果&#34;&gt;效果&lt;/h3&gt;
-&lt;p&gt;&lt;iframe id=&#34;videoiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
+&lt;p&gt;&lt;iframe class=&#34;videoiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
     src=&#34;https://teambition.liulp.club/video/?5fef3b314f20aa1f3f9d45ea85c96a253a3773b2&amp;mp4&#34;&gt;
 &lt;/iframe&gt;&lt;/p&gt;
 
@@ -374,7 +374,7 @@ LoadFile;
    {{ &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; }}{{&lt;span style=&#34;color:#a6e22e&#34;&gt;end&lt;/span&gt;}}
 &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;video&lt;/span&gt;&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;pdf效果&#34;&gt;PDF效果&lt;/h2&gt;
-&lt;iframe id=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
+&lt;iframe class=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef&#34; &gt;
 &lt;/iframe&gt;
 
