@@ -90,7 +90,7 @@ if (ele) {
 }
 var ele = document.getElementsByClassName("md5iframe");
 for (i = 0; i < ele.length; i++) {
-    var hh = ele[i].offsetWidth * 10 / 16;
+    var hh = ele[i].offsetWidth * 12 / 16;
     ele[i].height = hh;
 }
 
