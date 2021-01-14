@@ -134,7 +134,7 @@
 &lt;li&gt;加载video.js插件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;效果&#34;&gt;效果&lt;/h3&gt;
-&lt;iframe id=&#34;biiframe&#34; 
+&lt;iframe id=&#34;videoiframe&#34; width= &#39;100%&#39; height=&#39;400&#39;
     src=&#34;https://teambition.liulp.club/video/?5fef3b314f20aa1f3f9d45ea85c96a253a3773b2&amp;mp4&#34;&gt;
 &lt;/iframe&gt;
 
