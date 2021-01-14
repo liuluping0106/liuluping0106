@@ -88,9 +88,9 @@ if (ele) {
     var hh = Math.min(ele.offsetWidth * 0.65, 700);
     ele.height = hh
 }
-var ele = document.getElementsByClassName("md5iframe");
+var ele = document.getElementsByClassName("videoiframe");
 for (i = 0; i < ele.length; i++) {
-    var hh = ele[i].offsetWidth * 12 / 16;
+    var hh = ele[i].offsetWidth * 9 / 16;
     ele[i].height = hh;
 }
 
