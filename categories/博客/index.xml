@@ -112,8 +112,7 @@ location / {
    controls
    preload=&#34;auto&#34;
    poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp&#34;
-   data-setup=&#34;{}&#34;
- &gt;
+   data-setup=&#34;{}&#34;&gt;
 &lt;source src=&#34;https://teambition.liulp.club/download/5fef3b314f20aa1f3f9d45ea85c96a253a3773b2.mp4&#34; /&gt;
   
 &lt;/video&gt;&lt;/p&gt;
@@ -132,7 +131,14 @@ i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;col
 
 tap(x,y)
 mSleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;video
+   class=&#34;video-js vjs-big-play-centered vjs-fluid&#34;
+   controls
+   preload=&#34;auto&#34;
+   poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp&#34;
+   data-setup=&#34;{}&#34;&gt;
+&lt;source src=&#34;https://teambition.liulp.club/download/5fedaccb2f25e4405d4a4dedb06dfe18f8a18bcc.flv&#34; /&gt;
+&lt;/video&gt;&lt;/p&gt;</description>
   <pubDate>Fri, 01 Jan 2021 09:17:25 +0800</pubDate>
   
   <guid>https://www.liulp.club/2021/01/new_year_happy/</guid>
@@ -557,8 +563,7 @@ LoadFile;
    controls
    preload=&#34;auto&#34;
    poster=&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp&#34;
-   data-setup=&#34;{}&#34;
- &gt;
+   data-setup=&#34;{}&#34;&gt;
 &lt;source src=&#34;https://teambition.liulp.club/download/5fef3b314f20aa1f3f9d45ea85c96a253a3773b2.mp4&#34; /&gt;
   
 &lt;/video&gt;&lt;/p&gt;
