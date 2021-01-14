@@ -30,7 +30,7 @@ Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大�
     <meta property="article:published_time" content="2020-07-11T08:44:41">
   
   
-    <meta property="article:modified_time" content="2021-01-14T23:28:38">
+    <meta property="article:modified_time" content="2021-01-15T00:46:32">
   
   
   
@@ -80,6 +80,9 @@ Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大�
     
     <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/liuluping0106/liuluping0106/css/style-t40.min.css" />
     <link rel="preload" media="all"  href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/video.js@7.11.1/dist/video-js.min.css" crossorigin="anonymous" />
+    
     
     
 
@@ -300,9 +303,14 @@ Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大�
 <li>加载video.js插件</li>
 </ul>
 <h3 id="效果">效果</h3>
-<iframe id="videoiframe" width= '100%' height='400' 
-src="https://teambition.liulp.club/video/?5fef3b314f20aa1f3f9d45ea85c96a253a3773b2&mp4">
-</iframe>
+<p><video
+  class="video-js vjs-big-play-centered vjs-fluid"
+  controls
+  preload="auto"
+  poster="https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp"
+  data-setup="{}">
+<source src="https://teambition.liulp.club/download/5fef3b314f20aa1f3f9d45ea85c96a253a3773b2.mp4" />
+</video></p>
 <h3 id="代码-1">代码</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;<span style="color:#a6e22e">video</span>
    <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;video-js vjs-big-play-centered vjs-fluid&#34;</span>
@@ -831,6 +839,11 @@ function updateMinWidth() {
 
 
 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/video.js@7.11.1/dist/video.min.js" async="async" crossorigin="anonymous"></script>
 
 <script src="https://hm.baidu.com/hm.js?6f3e9da4ef7b870d4268ab2e39f10108" async="async"></script>
 
