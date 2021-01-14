@@ -335,18 +335,21 @@ tap(x,y)
 mSleep(<span style="color:#ae81ff">800</span>)
 </code></pre></div>
 <script src="https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js"></script>
-<p><video id="videoElement_flv"></video></p>
+<script src="https://cdn.jsdelivr.net/npm/videojs-flvjs@0.2.0/dist/videojs-flvjs.min.js"></script>
+<p><video id="videojs-flvjs-player" class="video-js vjs-big-play-centered vjs-fluid" controls>
+  <source src="https://teambition.liulp.club/download/60005914c9d0f0f00c084f9aba559a8171197d7a.flv" type='video/x-flv'>
+</video></p>
 <script>
-  if (flvjs.isSupported()) {
-      var videoElement = document.getElementById('videoElement_flv');
-      var flvPlayer = flvjs.createPlayer({
-          type: "flv",
-          url: "https://teambition.liulp.club/download/60005914c9d0f0f00c084f9aba559a8171197d7a.flv"
-      });
-      flvPlayer.attachMediaElement(videoElement);
-      flvPlayer.load();
-      flvPlayer.play();
-  }
+  videojs('videojs-flvjs-player', {
+    techOrder: ['html5', 'flvjs'],
+    flvjs: {
+      mediaDataSource: {
+        isLive: true,
+        cors: true,
+        withCredentials: false,
+      },
+    },
+  });
 </script>
               
             </div>
