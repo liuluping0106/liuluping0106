@@ -137,7 +137,7 @@ mSleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/videojs-flvjs@0.2.0/dist/videojs-flvjs.min.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;video id=&#34;videojs-flvjs-player&#34; class=&#34;video-js vjs-big-play-centered vjs-fluid&#34; controls&gt;
-  &lt;source src=&#34;https://teambition.liulp.club/download/60005914c9d0f0f00c084f9aba559a8171197d7a.flv&#34; type=&#39;video/x-flv&#39;&gt;
+  &lt;source src=&#34;https://teambition.liulp.club/download/60005914c9d0f0f00c084f9aba559a8171197d7a.mp4&#34; type=&#39;video/x-flv&#39;&gt;
 &lt;/video&gt;&lt;/p&gt;
 &lt;script&gt;
   videojs(&#39;videojs-flvjs-player&#39;, {
