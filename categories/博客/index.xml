@@ -546,10 +546,18 @@ LoadFile;
 &lt;li&gt;加载video.js插件&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;效果&#34;&gt;效果&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MP4
 &lt;p&gt;&lt;iframe class=&#34;videoiframe&#34; width= &#39;100%&#39; height=&#39;400&#39; scrolling=&#34;no&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;
     src=&#34;https://teambition.liulp.club/video/?5fef3b314f20aa1f3f9d45ea85c96a253a3773b2&amp;mp4&#34;&gt;
 &lt;/iframe&gt;&lt;/p&gt;
-
+&lt;/li&gt;
+&lt;li&gt;FLV
+&lt;p&gt;&lt;iframe class=&#34;videoiframe&#34; width= &#39;100%&#39; height=&#39;400&#39; scrolling=&#34;no&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;
+    src=&#34;https://teambition.liulp.club/video/?60005914c9d0f0f00c084f9aba559a8171197d7a&amp;flv&#34;&gt;
+&lt;/iframe&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;代码-1&#34;&gt;代码&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&amp;lt;&lt;span style=&#34;color:#a6e22e&#34;&gt;video&lt;/span&gt;
    &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;video-js vjs-big-play-centered vjs-fluid&amp;#34;&lt;/span&gt;

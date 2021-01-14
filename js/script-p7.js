@@ -66,10 +66,10 @@ for (i = 0; i < ele.length; i++) {
     ele[i].height = hh;
 }
 
-var ele = document.getElementById("dociframe");
-if (ele) {
-    var hh = Math.min(window.screen.availHeight * 0.85, ele.offsetWidth * 1.6);
-    ele.height = hh
+var ele = document.getElementsByClassName("dociframe");
+for (i = 0; i < ele.length; i++) {
+    var hh = Math.min(window.screen.availHeight * 0.85, ele[i].offsetWidth * 1.6);
+    ele[i].height = hh
 }
 
 var ele = document.getElementsByClassName("epubiframe");
