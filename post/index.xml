@@ -133,6 +133,7 @@ i&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;col
 tap(x,y)
 mSleep(&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;script src=&#34;https://cdn.jsdelivr.net/npm/video.js@7.11.1/dist/video.min.js&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/flv.js@1.5.0/dist/flv.min.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/videojs-flvjs@0.2.0/dist/videojs-flvjs.min.js&#34;&gt;&lt;/script&gt;
 &lt;p&gt;&lt;video id=&#34;videojs-flvjs-player&#34; class=&#34;video-js vjs-big-play-centered vjs-fluid&#34; controls&gt;
