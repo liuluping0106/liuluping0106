@@ -276,64 +276,7 @@ Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大�
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap" id="upper_ele">
-              <p>Hugo短命令实现Bilibili视频自适应屏幕啦。Hugo短命令真的强大丰富且便捷。</p>
-<h2 id="技术站点">技术站点</h2>
-<ul>
-<li><a href="https://bestzuo.cn/posts/blog-bilbli.html">自适应大小</a></li>
-<li><a href="https://blog.csdn.net/u013842501/article/details/105660616/">Hugo 短命令</a></li>
-<li><a href="https://www.jianshu.com/p/94d76eced8c2">video 加字幕</a></li>
-<li><a href="https://atelier.u-sub.net/srt2vtt/">srt2vtt</a></li>
-</ul>
-<h2 id="视频效果">视频效果</h2>
-<div style="position: relative;">
-    <iframe id="biiframe" width= '100%' height='400'
-    src="//player.bilibili.com/player.html?bvid=BV14z411i78Q&page=1&as_wide=1&high_quality=1&danmaku=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-</div>
-
-<h3 id="代码">代码</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;position: relative; padding: 32% 45%;&#34;</span>&gt;
-    &lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;</span> 
-    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&amp;as_wide=1&amp;high_quality=1&amp;danmaku=1&#34;</span> 
-    <span style="color:#a6e22e">scrolling</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;no&#34;</span> <span style="color:#a6e22e">framespacing</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allowfullscreen</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><h2 id="网盘视频">网盘视频</h2>
-<ul>
-<li><code>&lt;video&gt;</code>标签支持网盘视频和字幕</li>
-<li>腾讯云开启CORS</li>
-<li>加载video.js插件</li>
-</ul>
-<h3 id="效果">效果</h3>
-
-
-
-<h3 id="代码-1">代码</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">&lt;<span style="color:#a6e22e">video</span>
-   <span style="color:#a6e22e">class</span>=<span style="color:#e6db74">&#34;video-js vjs-big-play-centered vjs-fluid&#34;</span>
-   <span style="color:#a6e22e">controls</span>
-   <span style="color:#a6e22e">preload</span>=<span style="color:#e6db74">&#34;auto&#34;</span>
-   <span style="color:#a6e22e">poster</span>=<span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/UwOm5D.jpg&#34;</span>
-   <span style="color:#a6e22e">data</span><span style="color:#f92672">-</span><span style="color:#a6e22e">setup</span>=<span style="color:#e6db74">&#34;{}&#34;</span> &gt;
-   &lt;<span style="color:#a6e22e">source</span> <span style="color:#a6e22e">src</span>={{.<span style="color:#a6e22e">Get</span> <span style="color:#ae81ff">0</span> }} <span style="color:#66d9ef">type</span>=<span style="color:#e6db74">&#34;video/mp4&#34;</span> <span style="color:#f92672">/</span>&gt;
-   {{ <span style="color:#66d9ef">if</span> .<span style="color:#a6e22e">Get</span> <span style="color:#ae81ff">1</span> }}&lt;<span style="color:#a6e22e">track</span> <span style="color:#a6e22e">src</span>={{.<span style="color:#a6e22e">Get</span> <span style="color:#ae81ff">1</span> }} <span style="color:#a6e22e">srclang</span>=<span style="color:#e6db74">&#34;By Mydrive&#34;</span>  <span style="color:#a6e22e">kind</span>=<span style="color:#e6db74">&#34;subtitles&#34;</span> <span style="color:#66d9ef">default</span>&gt;
-   {{ <span style="color:#66d9ef">else</span> }}{{<span style="color:#a6e22e">end</span>}}
-&lt;<span style="color:#f92672">/</span><span style="color:#a6e22e">video</span>&gt;
-</code></pre></div><h2 id="pdf效果">PDF效果</h2>
-<iframe id="pdfiframe" width="100%" height="100%" frameborder="0"
-    src="https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef" >
-</iframe>
-
-
-<h3 id="代码-2">代码</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pdfiframe&#34;</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;100%&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>
-<span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.liulp.club/pdf/web/viewer.html?file=https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/document/{{.Get 0 }}.pdf&#34;</span> &gt;
-&lt;/<span style="color:#f92672">iframe</span>&gt;
-</code></pre></div><h2 id="问卷效果">问卷效果</h2>
-<script type='text/javascript' src='https://www.wjx.cn/handler/jqemed.ashx?activity=84948988&width=700&source=iframe'></script>
-<h3 id="代码-3">代码</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;text/javascript&#39;</span> 
-    <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://www.wjx.cn/handler/jqemed.ashx?activity={{.Get 0 }}&amp;width=700&amp;source=iframe&#39;</span>&gt;
-&lt;/<span style="color:#f92672">script</span>&gt;
-</code></pre></div>
+              
               
             </div>
           </div>
