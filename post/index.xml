@@ -4,8 +4,7 @@
 <item>
   <title>网站跨域设计</title>
   <link>https://www.liulp.club/2021/01/cors/</link>
-    <description>&lt;p&gt;trt
-花了小两天时间彻底实现了一下&lt;code&gt;teambition&lt;/code&gt;直链的跨域问题，值得写下来纪念一下。&lt;/p&gt;
+    <description>&lt;p&gt;花了小两天时间彻底实现了一下&lt;code&gt;teambition&lt;/code&gt;直链的跨域问题，值得写下来纪念一下。&lt;/p&gt;
 &lt;!--toc--&gt;
 &lt;h2 id=&#34;teambition&#34;&gt;Teambition&lt;/h2&gt;
 &lt;p&gt;目前找到了两个&lt;code&gt;teambition&lt;/code&gt;的直链系统，一个是用&lt;code&gt;Node.js&lt;/code&gt;写的，另一个是用&lt;code&gt;php&lt;/code&gt;写的。&lt;code&gt;Node.js&lt;/code&gt;写的我不会改，就修改了&lt;code&gt;php&lt;/code&gt;版本的，成功实现了自己的想法，哈哈哈，开心~~&lt;/p&gt;
@@ -75,7 +74,10 @@ location / {
 &lt;p&gt;当当当，展示一下效果。当然走的海外的服务器，延迟稍微有点高。&lt;/p&gt;
 &lt;iframe class=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef&#34; &gt;
-&lt;/iframe&gt;</description>
+&lt;/iframe&gt;
+
+
+&lt;p&gt;pp by me&lt;/p&gt;</description>
   <pubDate>Sun, 10 Jan 2021 23:02:38 +0800</pubDate>
   
   <guid>https://www.liulp.club/2021/01/cors/</guid>
