@@ -4,7 +4,7 @@
 <item>
   <title>网站跨域设计</title>
   <link>https://www.liulp.club/2021/01/cors/</link>
-    <description>&lt;p&gt;t
+    <description>&lt;p&gt;trt
 花了小两天时间彻底实现了一下&lt;code&gt;teambition&lt;/code&gt;直链的跨域问题，值得写下来纪念一下。&lt;/p&gt;
 &lt;!--toc--&gt;
 &lt;h2 id=&#34;teambition&#34;&gt;Teambition&lt;/h2&gt;
