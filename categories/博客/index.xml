@@ -2,6 +2,15 @@
 <channel>
 
 <item>
+  <title>娱乐至死</title>
+  <link>https://www.liulp.club/2021/01/amusing_ourselves/</link>
+    <description></description>
+  <pubDate>Sat, 30 Jan 2021 22:07:18 +0800</pubDate>
+  
+  <guid>https://www.liulp.club/2021/01/amusing_ourselves/</guid>
+</item>
+
+<item>
   <title>网站跨域设计</title>
   <link>https://www.liulp.club/2021/01/cors/</link>
     <description>&lt;p&gt;花了小两天时间彻底实现了一下&lt;code&gt;teambition&lt;/code&gt;直链的跨域问题，值得写下来纪念一下。&lt;/p&gt;
