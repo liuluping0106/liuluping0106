@@ -74,10 +74,7 @@ location / {
 &lt;p&gt;当当当，展示一下效果。当然走的海外的服务器，延迟稍微有点高。&lt;/p&gt;
 &lt;iframe class=&#34;pdfiframe&#34; width=&#34;100%&#34; height=&#34;100%&#34; frameborder=&#34;0&#34;
     src=&#34;https://teambition.liulp.club/pdf/web/viewer.html?file=https://teambition.liulp.club/download/5fedacf0edc4c6b6213340adba030a794b7b2aef&#34; &gt;
-&lt;/iframe&gt;
-
-
-&lt;p&gt;pp by me 1&lt;/p&gt;</description>
+&lt;/iframe&gt;</description>
   <pubDate>Sun, 10 Jan 2021 23:02:38 +0800</pubDate>
   
   <guid>https://www.liulp.club/2021/01/cors/</guid>
