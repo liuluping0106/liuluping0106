@@ -11,6 +11,12 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://www.liulp.club/2021/02/freedom_and_motivation/</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <lastmod>2021-02-05T23:37:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://www.liulp.club/2021/01/amusing_ourselves/</loc>
     <mobile:mobile type="pc,mobile"/>
     <lastmod>2021-01-30T23:38:07+08:00</lastmod>
@@ -144,17 +150,17 @@
   </url>
   <url>
     <loc>https://www.liulp.club/</loc>
-    <lastmod>2021-01-30T23:38:07+08:00</lastmod>
+    <lastmod>2021-02-05T23:37:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.liulp.club/categories/</loc>
-    <lastmod>2021-01-30T23:38:07+08:00</lastmod>
+    <lastmod>2021-02-05T23:37:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://www.liulp.club/tags/</loc>
-    <lastmod>2021-01-30T23:38:07+08:00</lastmod>
+    <lastmod>2021-02-05T23:37:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
