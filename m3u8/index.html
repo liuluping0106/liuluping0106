@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>videoJs</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            body{padding:0px;margin: 0px;}
+        </style>
+		<link href="https://cdn.jsdelivr.net/npm/video.js@7.9.2/dist/video-js.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/video.js@7.9.2/dist/video.min.js"></script>
+        <!-- test -->
+    </head>
+    <body>
+        <section id="videoPlayer">
+            <video id="example-video" class="video-js vjs-big-play-centered vjs-16-9" preload="auto" poster="https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed@master/image/20210106182421.webp">
+                <source src='https://cdn.jsdelivr.net/gh/liuluping0106/sourcebed/m3u8/cs.m3u8' type="application/x-mpegURL" id="target">
+            </video>
+        </section>
+        <script type="text/javascript">
+            function GetQueryValue(queryName) {
+                var query = decodeURI(window.location.search.substring(1));
+                var vars = query.split("&");
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == queryName) { return pair[1]; }
+                }
+                return null;
+            }
+            var queryVal=GetQueryValue('url');
+            if(queryVal){
+                var srcchange = document.getElementById('target');
+                srcchange.src=queryVal;
+            }
+        </script>
+
+        <script type="text/javascript">
+            var player = videojs('example-video', { "poster": "", "controls": "true" }, function() {
+                this.on('play', function() {
+                    console.log('正在播放');
+                });
+                //暂停--播放完毕后也会暂停
+                this.on('pause', function() {
+                    console.log("暂停中")
+                });
+                // 结束
+                this.on('ended', function() {
+                    console.log('结束');
+                })
+ 
+            });
+        </script>
+    </body>
+</html>
