@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.80.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="generator" content="Hugo 0.68.3 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="刘路平">
 <meta name="keywords" content="">
 <meta name="description" content="花了小两天时间彻底实现了一下teambition直链的跨域问题
@@ -291,31 +291,31 @@
 <li><a href="https://github.com/FlxSNX/TeambitionShare">TeambitionShare</a></li>
 </ul>
 <p>应为直链解析直接解析到<code>teambition</code>的服务器，本意是为了不用走服务器流量。但是在网页调用时会出现跨域的问题，我就修改了链接格式使用了反向代理。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// index.php
-</span><span style="color:#75715e"></span>$cors1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://teambition.ltest.tk/service&#34;</span>;
-$cors2 <span style="color:#f92672">=</span> <span style="color:#a6e22e">substr</span>($result[<span style="color:#e6db74">&#39;downloadUrl&#39;</span>], <span style="color:#ae81ff">34</span>);
-$result[<span style="color:#e6db74">&#39;downloadUrl&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">$cors1$cors2</span><span style="color:#e6db74">&#34;</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// index.php
+$cors1 = &#34;https://teambition.ltest.tk/service&#34;;
+$cors2 = substr($result[&#39;downloadUrl&#39;], 34);
+$result[&#39;downloadUrl&#39;] = &#34;$cors1$cors2&#34;;
 </code></pre></div><h2 id="teambitionshare">TeambitionShare</h2>
 <p>支持添加尾缀,直接链接访问文件不验证密码和<code>wehp</code>预览</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// flx.php
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">strpos</span>($s,<span style="color:#e6db74">&#39;.&#39;</span>) <span style="color:#f92672">!==</span> <span style="color:#66d9ef">false</span>){ 
-  $temp <span style="color:#f92672">=</span> <span style="color:#a6e22e">explode</span>(<span style="color:#e6db74">&#39;.&#39;</span>, $s);
-  $s <span style="color:#f92672">=</span> $temp[<span style="color:#ae81ff">0</span>];
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// flx.php
+if(strpos($s,&#39;.&#39;) !== false){ 
+  $temp = explode(&#39;.&#39;, $s);
+  $s = $temp[0];
 }
 
-<span style="color:#75715e">// index.php
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">substr</span>($_SERVER[<span style="color:#e6db74">&#39;REQUEST_URI&#39;</span>],<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">9</span>) <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#39;/download&#39;</span>){<span style="color:#a6e22e">……</span>}
+// index.php
+if(substr($_SERVER[&#39;REQUEST_URI&#39;],0,9) != &#39;/download&#39;){……}
 
-<span style="color:#75715e">//function.php
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span>($type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;mp4&#39;</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">in_array</span>($type,[<span style="color:#e6db74">&#34;gif&#34;</span>,<span style="color:#e6db74">&#34;jpeg&#34;</span>,<span style="color:#e6db74">&#34;jpg&#34;</span>,<span style="color:#e6db74">&#34;png&#34;</span>,<span style="color:#e6db74">&#34;webp&#34;</span>]) <span style="color:#f92672">||</span> <span style="color:#a6e22e">in_array</span>($type,[<span style="color:#e6db74">&#34;mp3&#34;</span>,<span style="color:#e6db74">&#34;ogg&#34;</span>,<span style="color:#e6db74">&#34;wav&#34;</span>])){
-  <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;?preview&#39;</span>;
+//function.php
+if($type == &#39;mp4&#39; || in_array($type,[&#34;gif&#34;,&#34;jpeg&#34;,&#34;jpg&#34;,&#34;png&#34;,&#34;webp&#34;]) || in_array($type,[&#34;mp3&#34;,&#34;ogg&#34;,&#34;wav&#34;])){
+  return &#39;?preview&#39;;
 }
 
-<span style="color:#75715e">//_preview.html
-</span><span style="color:#75715e"></span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#66d9ef">elseif</span>(<span style="color:#a6e22e">in_array</span>($filetype,[<span style="color:#e6db74">&#34;gif&#34;</span>,<span style="color:#e6db74">&#34;jpeg&#34;</span>,<span style="color:#e6db74">&#34;jpg&#34;</span>,<span style="color:#e6db74">&#34;png&#34;</span>,<span style="color:#e6db74">&#34;webp&#34;</span>])){ 
+//_preview.html
+<span style="color:#75715e">&lt;?php</span> <span style="color:#66d9ef">elseif</span>(<span style="color:#a6e22e">in_array</span>($filetype,[<span style="color:#e6db74">&#34;gif&#34;</span>,<span style="color:#e6db74">&#34;jpeg&#34;</span>,<span style="color:#e6db74">&#34;jpg&#34;</span>,<span style="color:#e6db74">&#34;png&#34;</span>,<span style="color:#e6db74">&#34;webp&#34;</span>])){ 
   <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">img</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mdui-center&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;?=</span><span style="color:#e6db74">$downloadUrl</span><span style="color:#e6db74">?&gt;&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;max-width: 100%;&#34;</span><span style="color:#f92672">&gt;</span>
-} <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
-</span></code></pre></div><h2 id="nignx目录分流">Nignx目录分流</h2>
+} <span style="color:#75715e">?&gt;</span>
+</code></pre></div><h2 id="nignx目录分流">Nignx目录分流</h2>
 <p>本来<code>teambition</code>解析和反向代理都可以分配一个域名，不过这样还是有跨域的问题。所以我学习重写了<code>nignx</code>的配置文件，使用子目录做分流。根目录是<code>TeambitionShare</code>，<code>/service</code>目录用来转代<code>teambition</code>服务器，进行反向代理，而<code>/pdf</code>和<code>/epub</code>用于加载<code>pdf</code>和<code>epub</code>。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">set $flag 1;
 location /service/ {

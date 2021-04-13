@@ -13,31 +13,31 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/FlxSNX/TeambitionShare&#34;&gt;TeambitionShare&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;应为直链解析直接解析到&lt;code&gt;teambition&lt;/code&gt;的服务器，本意是为了不用走服务器流量。但是在网页调用时会出现跨域的问题，我就修改了链接格式使用了反向代理。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// index.php
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;$cors1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://teambition.ltest.tk/service&amp;#34;&lt;/span&gt;;
-$cors2 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;substr&lt;/span&gt;($result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;], &lt;span style=&#34;color:#ae81ff&#34;&gt;34&lt;/span&gt;);
-$result[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;downloadUrl&amp;#39;&lt;/span&gt;] &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$cors1$cors2&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;// index.php
+$cors1 = &amp;#34;https://teambition.ltest.tk/service&amp;#34;;
+$cors2 = substr($result[&amp;#39;downloadUrl&amp;#39;], 34);
+$result[&amp;#39;downloadUrl&amp;#39;] = &amp;#34;$cors1$cors2&amp;#34;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;teambitionshare&#34;&gt;TeambitionShare&lt;/h2&gt;
 &lt;p&gt;支持添加尾缀,直接链接访问文件不验证密码和&lt;code&gt;wehp&lt;/code&gt;预览&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// flx.php
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;strpos&lt;/span&gt;($s,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!==&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;){ 
-  $temp &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;explode&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;, $s);
-  $s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; $temp[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;];
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;// flx.php
+if(strpos($s,&amp;#39;.&amp;#39;) !== false){ 
+  $temp = explode(&amp;#39;.&amp;#39;, $s);
+  $s = $temp[0];
 }
 
-&lt;span style=&#34;color:#75715e&#34;&gt;// index.php
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;substr&lt;/span&gt;($_SERVER[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;REQUEST_URI&amp;#39;&lt;/span&gt;],&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/download&amp;#39;&lt;/span&gt;){&lt;span style=&#34;color:#a6e22e&#34;&gt;……&lt;/span&gt;}
+// index.php
+if(substr($_SERVER[&amp;#39;REQUEST_URI&amp;#39;],0,9) != &amp;#39;/download&amp;#39;){……}
 
-&lt;span style=&#34;color:#75715e&#34;&gt;//function.php
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;($type &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;mp4&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;in_array&lt;/span&gt;($type,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gif&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpeg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;png&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;webp&amp;#34;&lt;/span&gt;]) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;in_array&lt;/span&gt;($type,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mp3&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ogg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wav&amp;#34;&lt;/span&gt;])){
-  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;?preview&amp;#39;&lt;/span&gt;;
+//function.php
+if($type == &amp;#39;mp4&amp;#39; || in_array($type,[&amp;#34;gif&amp;#34;,&amp;#34;jpeg&amp;#34;,&amp;#34;jpg&amp;#34;,&amp;#34;png&amp;#34;,&amp;#34;webp&amp;#34;]) || in_array($type,[&amp;#34;mp3&amp;#34;,&amp;#34;ogg&amp;#34;,&amp;#34;wav&amp;#34;])){
+  return &amp;#39;?preview&amp;#39;;
 }
 
-&lt;span style=&#34;color:#75715e&#34;&gt;//_preview.html
-&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;elseif&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;in_array&lt;/span&gt;($filetype,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gif&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpeg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;png&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;webp&amp;#34;&lt;/span&gt;])){ 
+//_preview.html
+&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;?php&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;elseif&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;in_array&lt;/span&gt;($filetype,[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;gif&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpeg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;jpg&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;png&amp;#34;&lt;/span&gt;,&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;webp&amp;#34;&lt;/span&gt;])){ 
   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mdui-center&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;?=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$downloadUrl&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;?&amp;gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;max-width: 100%;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-} &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;nignx目录分流&#34;&gt;Nignx目录分流&lt;/h2&gt;
+} &lt;span style=&#34;color:#75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;nignx目录分流&#34;&gt;Nignx目录分流&lt;/h2&gt;
 &lt;p&gt;本来&lt;code&gt;teambition&lt;/code&gt;解析和反向代理都可以分配一个域名，不过这样还是有跨域的问题。所以我学习重写了&lt;code&gt;nignx&lt;/code&gt;的配置文件，使用子目录做分流。根目录是&lt;code&gt;TeambitionShare&lt;/code&gt;，&lt;code&gt;/service&lt;/code&gt;目录用来转代&lt;code&gt;teambition&lt;/code&gt;服务器，进行反向代理，而&lt;code&gt;/pdf&lt;/code&gt;和&lt;code&gt;/epub&lt;/code&gt;用于加载&lt;code&gt;pdf&lt;/code&gt;和&lt;code&gt;epub&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;set $flag 1;
 location /service/ {
