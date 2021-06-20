@@ -115,7 +115,7 @@ var FontInspector = (function FontInspectorClosure() {
       name.textContent = fontName;
       var download = document.createElement("a");
       if (url) {
-        url = /url\(['"]?([^)"']+)/.exec(url);
+        url = /url\(['"]?([^\)"']+)/.exec(url);
         download.href = url[1];
       } else if (fontObj.data) {
         download.href = URL.createObjectURL(
@@ -201,7 +201,7 @@ var StepperManager = (function StepperManagerClosure() {
     create: function create(pageIndex) {
       var debug = document.createElement("div");
       debug.id = "stepper" + pageIndex;
-      debug.hidden = true;
+      debug.setAttribute("hidden", true);
       debug.className = "stepper";
       stepperDiv.appendChild(debug);
       var b = document.createElement("option");
@@ -224,7 +224,11 @@ var StepperManager = (function StepperManagerClosure() {
       }
       for (i = 0; i < steppers.length; ++i) {
         var stepper = steppers[i];
-        stepper.panel.hidden = stepper.pageIndex !== pageIndex;
+        if (stepper.pageIndex === pageIndex) {
+          stepper.panel.removeAttribute("hidden");
+        } else {
+          stepper.panel.setAttribute("hidden", true);
+        }
       }
       var options = stepperChooser.options;
       for (i = 0; i < options.length; ++i) {
@@ -377,6 +381,7 @@ var Stepper = (function StepperClosure() {
         line.appendChild(c("td", JSON.stringify(simplifyArgs(decArgs))));
       }
       if (operatorsToDisplay < operatorList.fnArray.length) {
+        line = c("tr");
         var lastCell = c("td", "...");
         lastCell.colspan = 4;
         chunk.appendChild(lastCell);
@@ -604,10 +609,15 @@ window.PDFBug = (function PDFBugClosure() {
       activePanel = index;
       var tools = this.tools;
       for (var j = 0; j < tools.length; ++j) {
-        var isActive = j === index;
-        buttons[j].classList.toggle("active", isActive);
-        tools[j].active = isActive;
-        tools[j].panel.hidden = !isActive;
+        if (j === index) {
+          buttons[j].setAttribute("class", "active");
+          tools[j].active = true;
+          tools[j].panel.removeAttribute("hidden");
+        } else {
+          buttons[j].setAttribute("class", "");
+          tools[j].active = false;
+          tools[j].panel.setAttribute("hidden", "true");
+        }
       }
     },
   };
